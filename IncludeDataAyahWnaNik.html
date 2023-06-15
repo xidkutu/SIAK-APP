@@ -1,0 +1,351 @@
+ <div class="tab-page"  id="tabPage3">
+                    <h2 class="tab">Data Ayah</h2>
+                <script type="javascript">
+                	tp1.addTabPage(document.getElementById("tabPage3"));
+                </script>
+                    <table class="TabSectionVisible" id="HeaderTAB" name="HeaderTAB" width="900">
+                      <tr>
+                        <td>
+                          <table align="center" width="100%" cellpadding="2" cellspacing="2" border="0">
+                            <tr>
+                              <td colspan="7"> </td>
+                            </tr>
+                            <tr>
+                              <td colspan="7">&nbsp;</td>
+                            </tr>
+<%
+String nik_ayah = ((request.getParameter("nik_ayh")==null)?"":request.getParameter("nik_ayh"));
+%>
+
+                            <tr>
+                                <td width="21%" height="43">NIK Ayah<font color="#000099" class="asterish">*</font></td>
+                                <td width="1%" height="43">:</td>
+                                <td width="26%" height="43">
+                                  <input type="radio" name="radiobutton3" value="Ada"  onClick="return radioValid5()" <%if(nik_ayah!=null && !nik_ayah.equals("")){%>checked<%}%>>
+                                Ada<br>
+                                <input type="radio" name="radiobutton3" value=" Tidak Ada"  onClick="return radioValid6()" <%if(nik_ayah!=null && !nik_ayah.equals("")){%>disabled<%}%>>
+                                Tidak Ada</td>
+                                <td width="1%" height="43">&nbsp;</td>
+                                <td width="24%" height="43">Warga Negara Ayah<font color="#000099" class="asterish">*</font></td>
+                                <td width="1%" height="43">:</td>
+                                <td width="26%" height="43">
+                                  <input type="radio" name="radiobutton4" value="1" onClick="return radioValid7()" disabled>
+                                WNI<br>
+                                <input type="radio" name="radiobutton4" value="2" onClick="return radioValid8()" checked>
+                                WNA</td>
+                            </tr>
+                            <tr>
+                              <td width="21%">
+                                <p style="line-height: 100%">Nomor Induk Kependudukan</p>
+                              </td>
+                              <td width="1%">:</td>
+                              <td width="26%">
+                                <p style="line-height: 100%">
+                                  <input type="text" name="nik_ayh" size="18" value='<%=((request.getParameter("nik_ayh")==null)?"":request.getParameter("nik_ayh"))%>' class="boxdefault" maxlength="17" onKeyUp="return num1(form1.nik_ayh)" disabled>
+                                  <b><b> </b></b></p>
+                              </td>
+                              <td width="1%">&nbsp;</td>
+                              <td width="24%">
+                                <p style="line-height: 100%">Nama Lengkap<font color="#000099" class="asterish">*</font></p>
+                              </td>
+                              <td width="1%">:</td>
+                              <td width="26%">
+                                <p style="line-height: 100%">
+                                  <input type="text" name="nama_ayh" size="27" value="<%=wnidataKlr.getWnaObj().getRecord3().getNamaPertma()%>" class="boxdefault" maxlength="60" onFocus="this.blur()">
+                                </p>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td width="21%">
+                                <p style="line-height: 100%">Tanggal Lahir<font color="#000099" class="asterish">*</font></p>
+                              </td>
+                              <td width="1%">:</td>
+                                <td width="26%">
+                                  <table width="100" border="0" cellspacing="3" cellpadding="0">
+                                    <tr>
+                                      <td>
+                                        <input
+                                class=boxdefault size=2 name=no_akta_lhr_dd1 maxlength="2" value="<%=getDD(wnidataKlr.getWnaObj().getRecord3().getTglLhr())%>" onKeyUp="return tab9()" onFocus="this.blur()">
+                                      </td>
+                                      <td>/ </td>
+                                      <td>
+                                        <input
+                                class=boxdefault size=2 name=no_akta_lhr_mm1 maxlength="2" value="<%=getMM(wnidataKlr.getWnaObj().getRecord3().getTglLhr())%>" onKeyUp="return tab10()" onFocus="this.blur()">
+                                      </td>
+                                      <td>/</td>
+                                      <td>
+                                        <input
+                                class=boxdefault size=4 name=no_akta_lhr_yy1 maxlength="4" value="<%=getYY(wnidataKlr.getWnaObj().getRecord3().getTglLhr())%>" onKeyUp="return tab11()" onFocus="this.blur()">
+                                      </td>
+                                    </tr>
+                                  </table>
+                                </td>
+                              <td width="1%">&nbsp;</td>
+                              <td width="24%">
+                                <p style="line-height: 100%"> Jenis Pekerjaan<font color="#000099" class="asterish">*</font></p>
+                              </td>
+                              <td width="1%">:</td>
+                              <td width="26%">
+                                <p style="line-height: 100%">
+                                <% if(request.getParameter("radiobutton4").equals("1")) { %>
+                                  <select
+                        name=jenis_pkrjn_ayh1 boxdefault2 class="boxdefault">
+                                    <option value="0" selected>-- Pilih Jenis Pekerjaan
+                                      --</option>
+                                      <option value="1">1 - Pelajar/Mahasiswa</option>
+                                      <option value="2" >2 - Mengurus Rumah Tangga</option>
+                                      <option  value="3">3 - Pensiunan</option>
+                                      <option  value="4">4 - Belum/Tidak Bekerja</option>
+                                      <option  value="5">5 - Petani/Pekebun</option>
+                                      <option  value="6">6 - Peternak</option>
+                                      <option  value="7">7 - Nelayan/Perikanan</option>
+                                      <option  value="8">8 - Industri</option>
+                                      <option  value="9">9 - Konstruksi</option>
+                                      <option  value="10">10 - Perdagangan</option>
+                                      <option  value="11">11 - Transportasi</option>
+                                      <option  value="12">12 - Pegawai Negeri Sipil</option>
+                                      <option  value="13">13 - Tentara Nasional Indonesia</option>
+                                      <option  value="14">14 - Kepolisian R.I.</option>
+                                      <option  value="15">15 - Jasa Lainnya</option>
+                                      <option  value="16">16 - Lainnya</option>
+                                  </select>
+                                <% } else {%>
+                                  <select
+                     class="boxdefault" name="jenis_pkrjn_ayh2">
+                                     <option  value="0" selected><b>-- Pilih Jenis Pekerjaan
+                                      --</b></option>
+                                      <option  value="1"><b>1 - Trading and Industry</b></option>
+                                      <option  value="2"><b>2 - Forestry</b></option>
+                                      <option  value="3"><b>3 - Mining and Energy</b></option>
+                                      <option  value="4"><b>4 - Public Work</b></option>
+                                      <option  value="5"><b>5 - Farming</b></option>
+                                      <option  value="6"><b>6 - Religion</b></option>
+                                      <option  value="7"><b>7 - Bank and Financial</b></option>
+                                      <option  value="8"><b>8 - Health and Society</b></option>
+                                      <option  value="9"><b>9 - Tourism</b></option>
+                                      <option  value="10"><b>10 - Transportation and Communication</b></option>
+                                      <option  value="11"><b>11 - Culture and Education</b></option>
+                                      <option  value="12"><b>12 - Others</b></option>
+                                  </select>
+                                <% } %>
+                                </p>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td width="21%">Alamat<font color="#000099" class="asterish">*</font></td>
+                              <td width="1%">:</td>
+                              <td colspan="3">
+                                <div align="left">
+                                  <input type="text" name="alamat_ayh" size="30" value="<%=wnidataKlr.getWnaObj().getRecord3().getAlamat()%>" class="boxdefault"  maxlength="120" onFocus="this.blur()">
+                                  RT<font color="#000099" class="asterish"> </font>
+                                  <input type="text" name="no_rt_ayh" size="3" value="<%=wnidataKlr.getWnaObj().getRecord3().getNoRt()%>" class="boxdefault" maxlength="3" onKeyUp="return num(form1.no_rt_ayh)" onFocus="this.blur()">
+                                  RW
+                                  <input type="text" name="no_rw_ayh" size="3" value="<%=wnidataKlr.getWnaObj().getRecord3().getNoRw()%>" class="boxdefault" maxlength="3" onKeyUp="return num(form1.no_rw_ayh)" onFocus="this.blur()">
+                                  Ds/Kpng/Dukuh</div>
+                              </td>
+                              <td width="1%">&nbsp;</td>
+                              <td width="26%">
+                                <input type="text" name="dusun_ayh" size="22"  value="<%=wnidataKlr.getWnaObj().getRecord3().getDusun()%>" class="boxdefault" maxlength="60" onFocus="this.blur()">
+                              </td>
+                            </tr>
+                            <tr>
+                                <td width="21%">
+                                  <div align="left">Kode Pos</div>
+                                </td>
+                              <td width="1%">:</td>
+                              <td width="26%">
+                                <input type="text" name="kodepos_ayh"  value="<%=wnidataKlr.getWnaObj().getRecord3().getKodePos()%>" size="7" class="boxdefault" maxlength="5" onFocus="this.blur()">
+                              </td>
+                              <td width="1%">&nbsp;</td>
+                                <td width="24%">
+                                  <div align="left">Telepon</div>
+                                </td>
+                              <td width="1%">:</td>
+                              <td width="26%">
+                                <input type="text" name="telp_ayh"  value="<%=wnidataKlr.getWnaObj().getRecord3().getTelp()%>" size="20" class="boxdefault" maxlength="20" onFocus="this.blur()">
+                              </td>
+                            </tr>
+
+                            <tr>
+                                <td width="21%">
+                                  <div align="left">Nama Provinsi<font color="#000099" class="asterish"></font><font color="#000099" class="asterish">*</font></div>
+                                </td>
+                              <td width="1%">:</td>
+                                <td width="26%">
+
+<%
+System.out.println("wnidataKlr="+wnidataKlr);
+if (wnidataKlr!=null) {
+  KelahiranObj kelahiranObj = wnidataKlr.getWniObj();
+  System.out.println("kelahiranObj="+kelahiranObj);
+  KelahiranWnaObj kelahiranWnaObj = wnidataKlr.getWnaObj();
+  System.out.println("kelahiranWnaObj="+kelahiranWnaObj);
+  if (kelahiranObj!=null) {
+    BayiData bayiData = kelahiranObj.getRecord1();
+    System.out.println("bayiData="+bayiData);
+    if (bayiData!=null) {
+      System.out.println("noprop="+kelahiranObj.getRecord1().getNoProp());
+      System.out.println("nokab="+kelahiranObj.getRecord1().getNoKab());
+      System.out.println("nokec="+kelahiranObj.getRecord1().getNoKec());
+      System.out.println("nokel="+kelahiranObj.getRecord1().getNoKel());
+    }
+    IbuData ibuData = kelahiranObj.getRecord2();
+    System.out.println("ibuData="+ibuData);
+    if (ibuData!=null) {
+      System.out.println("noprop="+kelahiranObj.getRecord2().getNoProp());
+      System.out.println("nokab="+kelahiranObj.getRecord2().getNoKab());
+      System.out.println("nokec="+kelahiranObj.getRecord2().getNoKec());
+      System.out.println("nokel="+kelahiranObj.getRecord2().getNoKel());
+    }
+    AyahData ayahData = kelahiranObj.getRecord3();
+    System.out.println("ayahData="+ayahData);
+    if (ayahData!=null) {
+      System.out.println("noprop="+kelahiranObj.getRecord3().getNoProp());
+      System.out.println("nokab="+kelahiranObj.getRecord3().getNoKab());
+      System.out.println("nokec="+kelahiranObj.getRecord3().getNoKec());
+      System.out.println("nokel="+kelahiranObj.getRecord3().getNoKel());
+    }
+    PelaporData pelaporData = kelahiranObj.getRecord4();
+    System.out.println("pelaporData="+pelaporData);
+  }
+  if (kelahiranWnaObj!=null) {
+    BayiDataWna bayiDataWna = kelahiranWnaObj.getRecord1();
+    System.out.println("bayiDataWna="+bayiDataWna);
+    if (bayiDataWna!=null) {
+      System.out.println("noprop="+kelahiranWnaObj.getRecord1().getNoProp());
+      System.out.println("nokab="+kelahiranWnaObj.getRecord1().getNoKab());
+      System.out.println("nokec="+kelahiranWnaObj.getRecord1().getNoKec());
+      System.out.println("nokel="+kelahiranWnaObj.getRecord1().getNoKel());
+    }
+    IbuDataWna ibuDataWna = kelahiranWnaObj.getRecord2();
+    System.out.println("ibuDataWna="+ibuDataWna);
+    if (ibuDataWna!=null) {
+      System.out.println("noprop="+kelahiranWnaObj.getRecord2().getNoProp());
+      System.out.println("nokab="+kelahiranWnaObj.getRecord2().getNoKab());
+      System.out.println("nokec="+kelahiranWnaObj.getRecord2().getNoKec());
+      System.out.println("nokel="+kelahiranWnaObj.getRecord2().getNoKel());
+    }
+    AyahDataWna ayahDataWna = kelahiranWnaObj.getRecord3();
+    System.out.println("ayahDataWna="+ayahDataWna);
+    if (ayahDataWna!=null) {
+      System.out.println("noprop="+kelahiranWnaObj.getRecord3().getNoProp());
+      System.out.println("nokab="+kelahiranWnaObj.getRecord3().getNoKab());
+      System.out.println("nokec="+kelahiranWnaObj.getRecord3().getNoKec());
+      System.out.println("nokel="+kelahiranWnaObj.getRecord3().getNoKel());
+    }
+    PelaporDataWna pelaporDataWna = kelahiranWnaObj.getRecord4();
+    System.out.println("pelaporDataWna="+pelaporDataWna);
+  }
+} else {
+  sudahAda = true;
+  wnidataKlr = new WniWnaObj(new KelahiranObj(), new KelahiranWnaObj());
+}
+%>
+
+     <input class="boxdefault" size=30 name="nama_prop_ayh" maxlength="60" onKeyUp="" <%if(wnidataKlr.getWnaObj().getRecord3().getNomor_prop()!=null){%>value="<%=wnidataKlr.getWnaObj().getRecord3().getNomor_prop()%>"<%}%> >
+<%
+System.out.println("no_prop_ayh="+no_prop_ayh);
+%>
+<input type="hidden" name="no_prop_ayh" value="<%=no_prop_ayh%>">
+
+                                </td>
+                              <td width="1%">&nbsp;</td>
+                                <td width="24%">
+                                  <div align="left">Nama Kabupaten/Kota<font color="#000099" class="asterish">*</font></div>
+                                </td>
+                              <td width="1%">:</td>
+                                <td width="26%">
+
+     <input class="boxdefault" size=30 name="nama_kab_ayh" maxlength="60" onKeyUp="" <%if(wnidataKlr.getWnaObj().getRecord3().getNomor_kab()!=null){%>value="<%=wnidataKlr.getWnaObj().getRecord3().getNomor_kab()%>"<%}%> >
+
+<input type="hidden" name="no_kab_ayh" value="<%=no_kab_ayh%>">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td width="21%">
+                                  <div align="left">Nama Kecamatan<font color="#000099" class="asterish">*</font></div>
+                                </td>
+                              <td width="1%">:</td>
+                                <td width="26%">
+
+     <input class="boxdefault" size=30 name="nama_kec_ayh" maxlength="60" onKeyUp="" <%if(wnidataKlr.getWnaObj().getRecord3().getNomor_kec()!=null){%>value="<%=wnidataKlr.getWnaObj().getRecord3().getNomor_kec()%>"<%}%> >
+
+<%
+System.out.println("no_kec_ayh: "+no_kec_ayh);
+%>
+
+<input type="hidden" name="no_kec_ayh" value="<%=no_kec_ayh%>">
+                                </td>
+                              <td width="1%">&nbsp;</td>
+                                <td width="24%">
+                                  <div align="left">Nama Desa/Kelurahan <font color="#000099" class="asterish">*</font></div>
+                                </td>
+                              <td width="1%">:</td>
+                                <td width="26%">
+     <input class="boxdefault" size=30 name="nkelayh" maxlength="60" onKeyUp="" <%if(wnidataKlr.getWnaObj().getRecord3().getNomor_kel()!=null){%>value="<%=wnidataKlr.getWnaObj().getRecord3().getNomor_kel()%>"<%}%> >
+<%
+System.out.println("no_kel_ayh: "+no_kel_ayh);
+%>
+
+<input type="hidden" name="no_kel_ayh" value="<%=no_kel_ayh%>">
+                                </td>
+                            </tr>
+
+                            <tr>
+                              <td width="21%">Keturunan</td>
+                              <td width="1%">:</td>
+                              <td width="26%">
+                                <select size="1" name="ketrunan_ayh" class="boxdefault" onchange="if (this.selectedIndex!=0){bangsa_ayh.disabled=false;} else {bangsa_ayh.disabled=true;}">
+                                   <option value="0" selected>-- Pilih Keturunan --</option>
+                                  <option value="1">1 - Eropa</option>
+                                  <option value="2">2 - Cina/Timur Asing Lainnya</option>
+                                  <option value="3">3 - Pribumi Nasrani</option>
+                                  <option value="4">4 - Pribumi Non Nasrani</option>
+                                  <option value="5">5 - Lainnya</option>
+                                </select>
+                              </td>
+                              <td width="1%">&nbsp;</td>
+                              <td width="24%">Kebangsaan (Bagi WNA)</td>
+                              <td width="1%">:</td>
+                              <td width="26%">
+                                <input type="text" name="bangsa_ayh" size="22" value='<%=((request.getParameter("bangsa_ayh")==null)?"":request.getParameter("bangsa_ayh"))%>' class="boxdefault" maxlength="40" disabled>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td width="21%">
+                                <p style="line-height: 100%">Tanggal Pencatatan
+                                  Perkawinan</p>
+                              </td>
+                              <td width="1%">:</td>
+                              <td width="26%">
+                                <table width="100" border="0" cellspacing="3" cellpadding="0">
+                                  <tr>
+                                    <td>
+                                      <input
+                                class=boxdefault size=2 name=tgl_ctt_kwn_ayh_dd maxlength="2" onKeyUp="return tab12()" onblur="setDDIbu(document.all['tgl_ctt_kwn_ayh_dd'].value)">
+                                    </td>
+                                    <td>/ </td>
+                                    <td>
+                                      <input
+                                class=boxdefault size=2 name=tgl_ctt_kwn_ayh_mm maxlength="2" onKeyUp="return tab13()" onblur="setMMIbu(document.all['tgl_ctt_kwn_ayh_mm'].value)">
+                                    </td>
+                                    <td>/</td>
+                                    <td>
+                                      <input
+                                class=boxdefault size=4 name=tgl_ctt_kwn_ayh_yy maxlength="4" onKeyUp="return tab14()" onblur="setYYIbu(document.all['tgl_ctt_kwn_ayh_yy'].value)">
+                                    </td>
+                                  </tr>
+                                </table>
+                              </td>
+                              <td width="1%">&nbsp;</td>
+                              <td width="24%">
+                                <p style="line-height: 100%">&nbsp;</p>
+                              </td>
+                              <td width="1%">&nbsp;</td>
+                              <td width="26%">&nbsp; </td>
+                            </tr>
+                          </table>
+                        </td>
+      </tr>
+    </table>
+  </div>

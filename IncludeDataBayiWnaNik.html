@@ -1,0 +1,174 @@
+<div class="tab-page" style="postion:absolute"  id="tabPage1">
+                  <h2 class="tab">Data Bayi</h2>
+
+		<script type="javascript">
+                	tp1.addTabPage(document.getElementById("tabPage1"));
+                </script>
+
+                    <table class="TabSectionVisible" id="HeaderTAB" name="HeaderTAB" width="900">
+                      <tr>
+                        <td>
+                          <table align="center" width="100%" cellpadding="2" cellspacing="5" border="0">
+                            <tr>
+                              <td colspan="7"> </td>
+                            </tr>
+                            <tr>
+                              <td width="21%">
+                                <p style="line-height: 100%">NIK Bayi<font color="#000099" class="asterish">*</font>
+                                </p>
+                              </td>
+                              <td width="1%">:</td>
+                              <td width="26%">
+                                <p style="line-height: 100%">
+                                  <input type="text" name="nik_bayi" size="18" value='<%=((request.getParameter("nik_bayi")==null)?"":request.getParameter("nik_bayi"))%>' class="boxdefault" maxlength="17"  onKeyUp="return num1(form1.nik_bayi)">
+                                  <b><b> </b></b></p>
+
+                        </td>
+                              <td width="1%">&nbsp;</td>
+                              <td width="24%">
+                                <p style="line-height: 100%">Nama Lengkap</p>
+                              </td>
+                              <td width="1%">:</td>
+                              <td width="26%">
+                                <p style="line-height: 100%"><%=wnidataKlr.getWnaObj().getRecord1().getNamaPertma().toUpperCase()%></p>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td width="21%">
+                                <p style="line-height: 100%">Jenis Kelamin</p>
+                              </td>
+                              <td width="1%">:</td>
+                              <td width="26%">
+                                <p style="line-height: 100%"><%=(wnidataKlr.getWnaObj().getRecord1().getJnsKlm().equals(new java.math.BigDecimal("1")))?"Laki-laki":"Perempuan"%></p>
+                              </td>
+                              <td width="1%">&nbsp;</td>
+                              <td width="24%">
+                                <p style="line-height: 100%">Tempat Dilahirkan<font color="#000099" class="asterish">*</font>
+                                </p>
+                              </td>
+                              <td width="1%">:</td>
+                              <td width="26%">
+                                <p style="line-height: 100%">
+                                  <select size="1" name="tmpt_dilhr" class="boxdefault">
+                                    <option value="0" selected>-- Pilih Tempat Dilahirkan
+                                    --</option>
+                                    <option value="1">1 - RS/RB</option>
+                                    <option value="2">2 - Puskesmas</option>
+                                    <option value="3">3 - Polindes</option>
+                                    <option value="4">4 - Rumah</option>
+                                    <option value="5">5 - Lainnya</option>
+                                  </select>
+                                </p>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td width="21%">
+                                <p style="line-height: 100%">Tempat Lahir</p>
+                              </td>
+                              <td width="1%">:</td>
+                              <td width="26%">
+                                <p style="line-height: 100%"><%=wnidataKlr.getWnaObj().getRecord1().getTmpLhr().toUpperCase()%></p>
+                              </td>
+                              <td width="1%">&nbsp;</td>
+                              <td width="24%">
+                                <p style="line-height: 100%">Tanggal Lahir</p>
+                              </td>
+                              <td width="1%">:</td>
+                              <td width="26%">
+                                <p style="line-height: 100%">
+<%=wnidataKlr.getWnaObj().getRecord1().getTglLhr()%>
+</p>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td width="21%">
+                                <p style="line-height: 100%">Hari Lahir&nbsp;</p>
+                              </td>
+                              <td width="1%">:</td>
+                              <td width="26%">
+                                <p style="line-height: 100%">
+                                 <%=day1%>
+                           </p>
+                              </td>
+                              <td width="1%">&nbsp;</td>
+                              <td width="24%">
+                                <p style="line-height: 100%">Pukul<font color="#000099" class="asterish">*</font></p>
+                              </td>
+                              <td width="1%">:</td>
+                                <td width="26%">
+                                  <p style="line-height: 100%">
+                                    <input type="text" name="pukul_lhr1" value='<%=((request.getParameter("pukul_lhr1")==null)?"":request.getParameter("pukul_lhr1"))%>' size="2" class="boxdefault" maxlength="2" onKeyUp="return tab()">
+                                    <b>:</b>
+                                    <input type="text" name="pukul_lhr2" value='<%=((request.getParameter("pukul_lhr2")==null)?"":request.getParameter("pukul_lhr2"))%>' size="2" class="boxdefault" maxlength="2" onKeyUp="return tab1()">
+   <select size="1" name="wkt_pkl_lhr" class="boxdefault" value="<%%>">
+                                      <option value="0" selected>-- Pilih Waktu --</option>
+                                      <option value="1">1 - WIB</option>
+                                      <option value="2">2 - WITA</option>
+                                      <option value="3">3 - WIT</option>
+                                    </select>
+                                  </p>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td width="21%">
+                                <p style="line-height: 100%">Jenis Kelahiran<font color="#000099" class="asterish">*</font></p>
+                              </td>
+                              <td width="1%">:</td>
+                              <td width="26%">
+                                <p style="line-height: 100%">
+                                  <select size="1" name="jenis_klahir" class="boxdefault">
+                                     <option  value="0" selected>-- Pilih Jenis Kelahiran
+                                    --</option>
+                                    <option value="1">1 - Tunggal</option>
+                                    <option value="2">2 - Kembar 2</option>
+                                    <option value="3">3 - Kembar 3</option>
+                                    <option value="4">4 - Kembar 4</option>
+                                    <option value="5">5 - Lainnya</option>
+                                  </select>
+                                </p>
+                              </td>
+                              <td width="1%">&nbsp;</td>
+                              <td width="24%">                                <p style="line-height: 100%">Anak ke<font color="#000099" class="asterish">*</font></p>
+                              </td>
+                              <td width="1%">:</td>
+                              <td width="26%">
+                                <p style="line-height: 100%">
+                                  <input type="text" name="anak_ke_lhr" size="2" value='<%=((request.getParameter("anak_ke_lhr")==null)?"":request.getParameter("anak_ke_lhr"))%>' class="boxdefault" maxlength="2" onKeyUp="return num(form1.anak_ke_lhr)">
+                                </p>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td width="21%">
+                                <p style="line-height: 100%">Penolong Kelahiran<font color="#000099" class="asterish">*</font>
+                                </p>
+                              </td>
+                              <td width="1%">:</td>
+                              <td width="26%">
+                                <p style="line-height: 100%">
+                                  <select size="1" name="pnlng_klahir" class="boxdefault">
+                                     <option value="0" selected>-- Pilih Penolong Kelahiran
+                                    --</option>
+                                    <option value="1">1 - Dokter</option>
+                                    <option value="2">2 - Bidan/Perawat</option>
+                                    <option value="3">3 - Dukun</option>
+                                    <option value="4">4 - Lainnya</option>
+                                  </select>
+                                </p>
+                              </td>
+                              <td width="1%">&nbsp;</td>
+                              <td width="24%">
+                                <p style="line-height: 100%">Berat Bayi</p>
+                              </td>
+                              <td width="1%">:</td>
+                              <td width="26%">
+                                <p style="line-height: 100%">
+                                    <input type="text" name="brt_bayi" size="5" value='<%=((request.getParameter("brt_bayi")==null)?"":request.getParameter("brt_bayi"))%>' class="boxdefault" maxlength="5"  onKeyUp="return tab2()">
+                                  Kg</p>
+                              </td>
+                            </tr>
+                          </table>
+                        </td>
+  </tr>
+</table>
+
+   </div>

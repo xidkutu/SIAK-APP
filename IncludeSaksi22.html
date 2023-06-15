@@ -1,0 +1,112 @@
+  <div class="tab-page" name="t1" style="postion:absolute" id="tabPage8">
+                    <h2 class="tab">Data Saksi II</h2>
+                <script type="text/javascript">
+                	tp1.addTabPage(document.getElementById("tabPage8"));
+                </script>
+                    <table class="TabSectionVisible" id="HeaderTAB" name="HeaderTAB" width="900">
+                      <tr>
+                        <td>
+                          <table align="center" cellpadding="2" cellspacing="2" border="0" width="100%">
+                            <tr>
+                              <td colspan="7"> </td>
+                            </tr>
+                            <tr>
+                              <td colspan="7">
+                                <p style="line-height: 100%">
+                                <p style="line-height: 100%">
+                              </td>
+                            </tr>
+                            <tr>
+                              <td width="22%">
+                                <p style="line-height: 100%">NIK Saksi II<font color="#000099" class="asterish">*</font></p>
+                              </td>
+                              <td width="1%">:</td>
+                              <td width="23%">
+                                <p style="line-height: 100%">
+                                  <input type="text" name="nik_sksi2" value="<%=request.getParameter("nik_sksi2")%>" size="17" class="boxdefault" maxlength="17" onKeyUp="return num1(form1.nik_sksi2)" onFocus="this.blur()">
+                                  <b><b> </b></b></p>
+                              </td>
+                              <td width="3%">&nbsp;</td>
+                              <td width="24%">
+                                <p style="line-height: 100%">Nama Lengkap</p>
+                              </td>
+                              <td width="1%">:</td>
+                              <td width="26%">
+                                <p style="line-height: 100%"><%=kawinData.getRecord2().getWnaObj().getRecord4().getNamaPertma().toUpperCase()%></p>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td width="22%">Tempat Lahir</td>
+                              <td width="1%">:</td>
+                              <td width="23%"><%=kawinData.getRecord2().getWnaObj().getRecord4().getTmpLhr().toUpperCase()%></td>
+                              <td width="3%">&nbsp;</td>
+                              <td width="24%">Tanggal Lahir</td>
+                              <td width="1%">:</td>
+                              <td width="26%">
+                              <%=kawinData.getRecord2().getWnaObj().getRecord4().getTglLhr()%>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td width="22%">Alamat</td>
+                              <td width="1%">:</td>
+                              <td colspan="5"><%=kawinData.getRecord2().getWnaObj().getRecord4().getAlamat()%>, <br> <%=kawinData.getRecord2().getWnaObj().getRecord4().getNoRt()%>, <%=kawinData.getRecord2().getWnaObj().getRecord4().getNoRw()%>,<%=kawinData.getRecord2().getWnaObj().getRecord4().getDusun()%>,<%=kawinData.getRecord2().getWnaObj().getRecord4().getKodePos()%>,<%=kawinData.getRecord2().getWnaObj().getRecord4().getTelp()%></td>
+                            </tr>
+                            <tr>
+                              <td width="22%">Agama</td>
+                              <td width="1%">:</td>
+                              <td width="23%"></td>
+                              <td width="3%">&nbsp;</td>
+                              <td width="24%">Jenis Pekerjaan<font color="#000099" class="asterish">*</font></td>
+                              <td width="1%">:</td>
+                                <td width="26%">
+                                  <select
+                     name=jenis_pkrjn1_s2 boxdefault2 class="boxdefault" disabled>
+                                    <option value="0" selected>-- Pilih Jenis
+                                    Pekerjaan --</option>
+                                    <option value="1">1 - Pelajar/Mahasiswa</option>
+                                    <option value="2">2 - Mengurus Rumah Tangga</option>
+                                    <option value="3">3 - Pensiunan</option>
+                                    <option value="4">4 - Belum/Tidak Bekerja</option>
+                                    <option value="5">5 - Petani/Pekebun</option>
+                                    <option value="6">6 - Peternak</option>
+                                    <option value="7">7 - Nelayan/Perikanan</option>
+                                    <option value="8">8 - Industri</option>
+                                    <option value="9">9 - Konstruksi</option>
+                                    <option value="10">10 - Perdagangan</option>
+                                    <option value="11">11 - Transportasi</option>
+                                    <option value="12">12 - Pegawai Negeri Sipil</option>
+                                    <option value="13">13 - Tentara Nasional Indonesia</option>
+                                    <option value="14">14 - Kepolisian R.I.</option>
+                                    <option value="15">15 - Jasa Lainnya</option>
+                                    <option value="16">16 - Lainnya</option>
+                                  </select>
+
+                                  <select
+                    class="boxdefault" name="jenis_pkrjn2_s2" >
+                                    <option  value="0" selected><b>-- Pilih Jenis
+                                    Pekerjaan --</b></option>
+                                    <option  value="1"><b>1 - Trading and Industry</b></option>
+                                    <option  value="2"><b>2 - Forestry</b></option>
+                                    <option  value="3"><b>3 - Mining and Energy</b></option>
+                                    <option  value="4"><b>4 - Public Work</b></option>
+                                    <option  value="5"><b>5 - Farming</b></option>
+                                    <option  value="6"><b>6 - Religion</b></option>
+                                    <option  value="7"><b>7 - Bank and Financial</b></option>
+                                    <option  value="8"><b>8 - Health and Society</b></option>
+                                    <option  value="9"><b>9 - Tourism</b></option>
+                                    <option  value="10"><b>10 - Transportation
+                                    and Communication</b></option>
+                                    <option  value="11"><b>11 - Culture and Education</b></option>
+                                    <option  value="12"><b>12 - Others</b></option>
+                                  </select>
+<script language="JavaScript">
+  form1.jenis_pkrjn2_s2.options[<%=kawinData.getRecord2().getWnaObj().getRecord4().getJenisPkrjn()%>].selected=true
+</script>
+
+                                </td>
+                            </tr>
+                          </table>
+                        </td>
+      </tr>
+    </table>
+  </div>

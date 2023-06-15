@@ -1,0 +1,201 @@
+<div class="tab-page" name="t1" style="postion:absolute" id="tabPage2">
+                    <h2 class="tab">Data Ibu</h2>
+
+                <script type="text/javascript">
+                	tp1.addTabPage(document.getElementById("tabPage2"));
+                </script>
+
+
+                    <table class="TabSectionVisible" id="HeaderTAB" name="HeaderTAB" width="900">
+                      <tr>
+                        <td>
+                          <table align="center" width="100%" cellpadding="2" cellspacing="2" border="0">
+                            <tr>
+                              <td colspan="7"> </td>
+                            </tr>
+                            <tr>
+                              <td colspan="7">&nbsp;</td>
+                            </tr>
+                            <tr>
+                              <td width="22%">NIK Ibu<font color="#000099" class="asterish">*</font></td>
+                              <td width="1%">:</td>
+                              <td width="23%">
+                                <input type="radio" name="radiobutton" value="Ada" onClick="return radioValid3()">
+                                Ada<br>
+                                <input type="radio" name="radiobutton" value="Tidak Ada" onClick="return radioValid4()">
+                                Tidak Ada</td>
+                              <td width="3%">&nbsp;</td>
+                              <td width="24%">Warga Negara Ibu<font color="#000099" class="asterish">*</font></td>
+                              <td width="1%">&nbsp;</td>
+                              <td width="26%">
+                                <input type="radio" name="radiobutton1" value="1" onClick="return radioValid1()">
+                                WNI<br>
+                                <input type="radio" name="radiobutton1" value="2" onClick="return radioValid2()">
+                                WNA</td>
+                            </tr>
+                            <tr>
+                              <td width="22%">
+                                <p style="line-height: 100%">Nomor Induk Kependudukan</p>
+                              </td>
+                              <td width="1%">:</td>
+                              <td width="23%">
+                                <p style="line-height: 100%">
+                                  <input type="text" name="nik_ibu" size="18" class="boxdefault" maxlength="17" disabled  onKeyUp="return num1(form1.nik_ibu)">
+                                  <b><b> </b></b></p>
+                              </td>
+                              <td width="3%">&nbsp;</td>
+                              <td width="24%">
+                                <p style="line-height: 100%">Nama Lengkap<font color="#000099" class="asterish">*</font></p>
+                              </td>
+                              <td width="1%">:</td>
+
+            <td width="26%">
+              <p style="line-height: 100%">
+                <input type="text" name="nama_ibu" size="27" value='<%=((request.getParameter("nama_ibu")==null)?"":request.getParameter("nama_ibu"))%>' class="boxdefault" maxlength="60" >
+              </p>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td width="22%">
+                                <p style="line-height: 100%">Tanggal Lahir<font color="#000099" class="asterish">*</font></p>
+                              </td>
+                              <td width="1%">:</td>
+                              <td width="23%">
+                                <table width="100" border="0" cellspacing="3" cellpadding="0">
+                                  <tr>
+
+                  <td>
+                    <input
+                                class=boxdefault size=2 name=no_akta_lhr_dd maxlength="2" value='<%=((request.getParameter("no_akta_lhr_dd")==null)?"":request.getParameter("no_akta_lhr_dd"))%>' onKeyUp="return tab3()" >
+                  </td>
+                                    <td>/ </td>
+
+                  <td>
+                    <input
+                                class=boxdefault size=2 name=no_akta_lhr_mm maxlength="2" value='<%=((request.getParameter("no_akta_lhr_mm")==null)?"":request.getParameter("no_akta_lhr_mm"))%>' onKeyUp="return tab4()" >
+                  </td>
+                                    <td>/</td>
+
+                  <td>
+                    <input
+                                class=boxdefault size=4 name=no_akta_lhr_yy maxlength="4" value='<%=((request.getParameter("no_akta_lhr_yy")==null)?"":request.getParameter("no_akta_lhr_yy"))%>' onKeyUp="return tab5()" >
+                  </td>
+                                  </tr>
+                                </table>
+                              </td>
+                              <td width="3%">&nbsp;</td>
+                              <td width="24%">
+                                <p style="line-height: 100%"> Jenis Pekerjaan<font color="#000099" class="asterish">*</font></p>
+                              </td>
+                              <td width="1%">:</td>
+                              <td width="26%">
+                                <p style="line-height: 100%">
+                                  <select
+                  name=jenis_pkrjn_ibu1 boxdefault2 class="boxdefault" disabled >
+                                    <option value="0" selected>-- Pilih Jenis
+                                    Pekerjaan --</option>
+                                    <option value="1">1 - Pelajar/Mahasiswa</option>
+                                    <option value="2" >2 - Mengurus Rumah Tangga</option>
+                                    <option  value="3">3 - Pensiunan</option>
+                                    <option  value="4">4 - Belum/Tidak Bekerja</option>
+                                    <option  value="5">5 - Petani/Pekebun</option>
+                                    <option  value="6">6 - Peternak</option>
+                                    <option  value="7">7 - Nelayan/Perikanan</option>
+                                    <option  value="8">8 - Industri</option>
+                                    <option  value="9">9 - Konstruksi</option>
+                                    <option  value="10">10 - Perdagangan</option>
+                                    <option  value="11">11 - Transportasi</option>
+                                    <option  value="12">12 - Pegawai Negeri Sipil</option>
+                                    <option  value="13">13 - Tentara Nasional
+                                    Indonesia</option>
+                                    <option  value="14">14 - Kepolisian R.I.</option>
+                                    <option  value="15">15 - Jasa Lainnya</option>
+                                    <option  value="16">16 - Lainnya</option>
+                                  </select>
+                                </p>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td width="22%">
+                                <p style="line-height: 100%">Alamat<font color="#000099" class="asterish">*</font></p>
+                              </td>
+                              <td width="1%">:</td>
+
+            <td colspan="5">
+              <p style="line-height: 100%">
+                <input type="text" name="alamat_ibu" size="30" class="boxdefault" value='<%=((request.getParameter("alamat_ibu")==null)?"":request.getParameter("alamat_ibu"))%>' maxlength="120" >
+                RT<font color="#000099" class="asterish"> </font>
+                <input type="text" name="no_rt_ibu" value="<%=request.getParameter("no_rt_ibu")%>" size="3" class="boxdefault" maxlength="3"  onKeyUp="return num(form1.no_rt_ibu)" >
+                RW
+                <input type="text" name="no_rw_ibu" size="3" class="boxdefault" value='<%=((request.getParameter("no_rw_ibu")==null)?"":request.getParameter("no_rw_ibu"))%>' maxlength="3" onKeyUp="return num(form1.no_rw_ibu)" >
+                Dusun/Kampung/Dukuh
+                <input type="text" name="dusun_ibu" size="22" class="boxdefault" value='<%=((request.getParameter("dusun_ibu")==null)?"":request.getParameter("dusun_ibu"))%>' maxlength="60" >
+              </p>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td width="22%">
+                                <div align="right">Kode Pos</div>
+                              </td>
+                              <td width="1%">:</td>
+
+            <td width="23%">
+              <input type="text" name="kodepos_ibu" size="7" value='<%=((request.getParameter("kodepos_ibu")==null)?"":request.getParameter("kodepos_ibu"))%>' class="boxdefault" maxlength="5" >
+            </td>
+                              <td width="3%">&nbsp;</td>
+                              <td width="24%">
+                                <div align="right">Telepon</div>
+                              </td>
+                              <td width="1%">:</td>
+
+            <td width="26%">
+              <input type="text" name="telp_ibu" value='<%=((request.getParameter("telp_ibu")==null)?"":request.getParameter("telp_ibu"))%>' size="20" class="boxdefault" maxlength="20" >
+            </td>
+                            </tr>
+                            <tr>
+                              <td width="22%">
+                                <div align="right">Nama Provinsi<font color="#000099" class="asterish">*</font>
+                                  </div>
+                              </td>
+                              <td width="1%">:</td>
+                              <td width="23%">
+                                <input type="hidden" name="no_prop_ibu" value="">
+     <input class="boxdefault" size=30 name="nama_prop_ibu" maxlength="60" onKeyUp="">
+                              </td>
+                              <td width="3%">&nbsp;</td>
+                              <td width="24%">
+                                <div align="right">Nama Kabupaten/Kota<font color="#000099" class="asterish">*</font></div>
+                              </td>
+                              <td width="1%">:</td>
+                              <td width="26%">
+                                <input type="hidden" name="no_kab_ibu" value="">
+     <input class="boxdefault" size=30 name="nama_kab_ibu" maxlength="60" onKeyUp="">
+                              </td>
+                            </tr>
+                            <tr>
+                              <td width="22%">
+                                <div align="right">Nama Kecamatan<font color="#000099" class="asterish">*</font>
+                                  </div>
+                              </td>
+                              <td width="1%">:</td>
+                              <td width="23%">
+                                <input type="hidden" name="no_kec_ibu" value="">
+     <input class="boxdefault" size=30 name="nama_kec_ibu" maxlength="60" onKeyUp="">
+                              </td>
+                              <td width="3%">&nbsp;</td>
+                              <td width="24%">
+
+              <div align="right">Nama Desa/Kelurahan<font color="#000099" class="asterish">*</font>
+                </div>
+                              </td>
+                              <td width="1%">:</td>
+                              <td width="26%">
+                                <input type="hidden" name="no_kel_ibu" value="">
+     <input class="boxdefault" size=30 name="nama_kel_ibu" maxlength="60" onKeyUp="">
+                              </td>
+                            </tr>
+                          </table>
+                        </td>
+      </tr>
+    </table>
+  </div>

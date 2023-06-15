@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE weblogic-web-app PUBLIC "-//BEA Systems, Inc.//DTD Web Application 8.1//EN" "http://www.bea.com/servers/wls810/dtd/weblogic810-web-jar.dtd">
+<weblogic-web-app>
+<!--<session-descriptor>
+<session-param>
+<param-name>PersistentStoreType</param-name>
+<param-value>replicated_if_clustered</param-value>
+</session-param>
+</session-descriptor>
+<jsp-descriptor>
+<jsp-param>
+<param-name>pageCheckSeconds</param-name>
+<param-value>-1</param-value>
+</jsp-param>
+<jsp-param>
+<param-name>precompile</param-name>
+<param-value>true</param-value>
+</jsp-param>
+</jsp-descriptor>-->
+<virtual-directory-mapping>
+<local-path>C:/bea/logs/siaklog/</local-path>
+   <url-pattern>/xml/*.*</url-pattern>
+    <url-pattern>*.xml</url-pattern>
+    <url-pattern>*.sdf</url-pattern>
+    <url-pattern>*.txt</url-pattern>
+    <url-pattern>*.xsl</url-pattern>
+	<url-pattern>*.jpg</url-pattern>
+	<url-pattern>*.tif</url-pattern>
+	<url-pattern>*.gif</url-pattern>
+  </virtual-directory-mapping>
+<context-root>/</context-root>
+</weblogic-web-app>

@@ -1,0 +1,234 @@
+<div class="tab-page"  id="tabPage7">
+                    <h2 class="tab">Data Administrasi</h2>
+                <script type="javascript">
+                	tp1.addTabPage(document.getElementById("tabPage7"));
+                </script>
+                    <table class="TabSectionVisible" id="HeaderTAB" name="HeaderTAB" width="900">
+                      <tr>
+                        <td>
+                          <table cellpadding="2" cellspacing="2" border="0" width="100%" align="center">
+                            <tr>
+                              <td colspan="7"> </td>
+                            </tr>
+                            <tr>
+                              <td colspan="7">
+                                <p style="line-height: 100%">
+                              </td>
+                            </tr>
+                            <tr>
+                              <td width="21%">
+                                <p style="line-height: 100%">Jenis Daftar Kelahiran<font color="#000099" class="asterish">*</font>
+                                </p>
+                              </td>
+                              <td width="1%">:</td>
+                              <td width="26%">
+                                <p style="line-height: 100%">
+                                  <select size="1" name="jenis_dft_lhr" class="boxdefault">
+                                    <option selected>-- Pilih Daftar Kelahiran
+                                    --</option>
+                                    <option>1 - Umum</option>
+                                    <option>2 - Istimewa</option>
+                                    <option>3 - Dispensasi</option>
+                                  </select>
+                                </p>
+                              </td>
+                              <td width="1%">&nbsp;</td>
+                              <td width="24%">
+                                <p style="line-height: 100%">Dasar Hukum Pencatatan
+                                  Kelahiran<font color="#000099" class="asterish">*</font></p>
+                              </td>
+                              <td width="1%">:</td>
+                              <td width="26%">
+                                <p style="line-height: 100%">
+                                  <select size="1" name="dsrhk_cttlhr" class="boxdefault">
+                                    <option selected>-- Pilih Dasar Hukum --</option>
+                                    <option>1 - Stbld 1849 No. 25</option>
+                                    <option>2 - Stbld 1917 No.130 jo 1919 No.81</option>
+                                    <option>3 - Stbld 1920 No.751 jo 1927 No.584</option>
+                                    <option>4 - Stbld 1933 No.75 jo 1936 No.607</option>
+                                    <option>5 - Non Stbld</option>
+                                  </select>
+                                </p>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td width="21%" valign="top">Dokumen Persyaratan<font color="#000099" class="asterish">*</font></td>
+                              <td width="1%" valign="top">:</td>
+                              <td width="26%" valign="top">
+                                <input type="checkbox" name="chk_ktp_kk" value="checkbox">
+                                Copy KTP dan KK Orang Tua<br>
+                                <input type="checkbox" name="chk_akta_kwn" value="checkbox">
+                                Akta Kawin Orang Tua<br>
+                                <input type="checkbox" name="chk_paspor" value="checkbox">
+                                Paspor Orang Tua </td>
+                              <td width="1%">&nbsp;</td>
+                              <td colspan="3" valign="top">
+                                <input type="checkbox" name="chk_srt_lhr" value="checkbox">
+                                Surat Kenal Lahir dari RS/Dokter/Bidan<br>
+                                <input type="checkbox" name="chk_ket_lhr" value="checkbox">
+                                Keterangan Kelahiran dari Desa/Kelurahan<br>
+                                <input type="checkbox" name="chk_srt_wn_ortu" value="checkbox">
+                                Surat Kewarganegaraan Orang Tua </td>
+                            </tr>
+                            <tr>
+                              <td width="21%">
+                                <p style="line-height: 100%">Nomor Akta Kelahiran</p>
+                              </td>
+                              <td width="1%">:</td>
+                              <td width="26%">
+                                <p style="line-height: 100%"> &lt;Create by system&gt;</p>
+                              </td>
+                              <td width="1%">&nbsp;</td>
+                              <td width="24%">
+                                <p style="line-height: 100%">Tanggal Akta Kelahiran<font color="#000099" class="asterish">*</font>
+                                </p>
+                              </td>
+                              <td width="1%">:</td>
+                              <td width="26%">
+                                <table width="100" border="0" cellspacing="3" cellpadding="0">
+                                  <tr>
+                                    <td>
+                                      <input
+                                class=boxdefault size=2 name=tgl_akta_lhr maxlength="2">
+                                    </td>
+                                    <td>/ </td>
+                                    <td>
+                                      <input
+                                class=boxdefault size=2 name=bln_akta_lhr maxlength="2">
+                                    </td>
+                                    <td>/</td>
+                                    <td>
+                                      <input
+                                class=boxdefault size=4 maxlength="4" name=thn_akta_lhr>
+                                    </td>
+                                  </tr>
+                                </table>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td width="21%">Tanggal Cetak Kutipan Akta</td>
+                              <td width="1%">:</td>
+                              <td width="26%"> &lt;sysdate&gt;</td>
+                              <td width="1%">&nbsp;</td>
+                              <td width="24%">Jabatan pada Kantor/Dinas</td>
+                              <td width="1%">:</td>
+                              <td width="26%"> &lt;Relational from setup penandatangan
+                                dokumen&gt; </td>
+                            </tr>
+                            <tr>
+                              <td width="21%">Nama Pejabat</td>
+                              <td width="1%">:</td>
+                              <td width="26%"> &lt;Relational from setup penandatangan
+                                dokumen&gt; </td>
+                              <td width="1%">&nbsp;</td>
+                              <td width="24%">
+                                <p style="line-height: 100%">NIP Pejabat</p>
+                              </td>
+                              <td width="1%">:</td>
+                              <td width="26%">
+                                <p style="line-height: 100%"> &lt;Relational from
+                                  setup penandatangan dokumen&gt; </p>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td width="21%">
+                                <p style="line-height: 100%">Nama Kepala Desa/Lurah
+                                </p>
+                              </td>
+                              <td width="1%">:</td>
+                              <td width="26%">
+                                <p style="line-height: 100%">
+                                  <input type="text" name="nama_kep_des" size="27" class="boxdefault" maxlength="60">
+                                </p>
+                              </td>
+                              <td width="1%">&nbsp;</td>
+                              <td width="24%">
+                                <p style="line-height: 100%">NIP Lurah </p>
+                              </td>
+                              <td width="1%">:</td>
+                              <td width="26%">
+                                <p style="line-height: 100%">
+                                  <input type="text" name="nip_lrh" size="9" class="boxdefault" maxlength="9">
+                                </p>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td width="21%">
+                                <p style="line-height: 100%">Nama Petugas Pencatat/
+                                  Registrar<font color="#000099" class="asterish">*</font></p>
+                              </td>
+                              <td width="1%">:</td>
+                              <td width="26%">
+                                <p style="line-height: 100%">
+                                  <input type="text" name="nama_pet_reg" size="27" class="boxdefault" maxlength="60">
+                                </p>
+                              </td>
+                              <td width="1%">&nbsp;</td>
+                              <td align="center" width="24%">
+                                <p align="left" style="line-height: 100%">NIP
+                                  Petugas Pencatat/Registrar<font color="#000099" class="asterish">*</font>
+                              </td>
+                              <td width="1%">:</td>
+                              <td align="center" width="26%">
+                                <p align="left" style="line-height: 100%">
+                                  <input type="text" name="nip_pet_reg" size="9" class="boxdefault" maxlength="9">
+                              </td>
+                            </tr>
+                            <tr>
+                              <td align="center" width="21%">
+                                <p align="left" style="line-height: 100%">Nama
+                                  Petugas Entri Data
+                              </td>
+                              <td width="1%">:</td>
+                              <td align="center" width="26%">
+                                <p align="left" style="line-height: 100%"> &lt;get
+                                  by login&gt;
+                              </td>
+                              <td align="center" width="1%">&nbsp;</td>
+                              <td width="24%">
+                                <p style="line-height: 100%">NIP Petugas Entri
+                                  Data</p>
+                              </td>
+                              <td width="1%">:</td>
+                              <td width="26%">
+                                <p style="line-height: 100%"> &lt;get by login&gt;</p>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td width="21%">
+                                <p style="line-height: 100%">Tanggal Entri Data</p>
+                              </td>
+                              <td width="1%">:</td>
+                              <td width="26%"> &lt;sysdate&gt;</td>
+                              <td width="1%">&nbsp;</td>
+                              <td width="24%">
+                                <p style="line-height: 100%">&nbsp;</p>
+                              </td>
+                              <td width="1%">&nbsp;</td>
+                              <td width="26%">&nbsp; </td>
+                            </tr>
+                          </table>
+                        </td>
+      </tr>
+    </table>
+                  </div>
+  </div>
+
+<script language="javascript">
+setupAllTabs();
+</script>
+
+              </div>
+              </td>
+                      </tr>
+                    </table>
+                  </div>
+                </td>
+                <td>&nbsp;</td>
+              </tr>
+              <tr>
+                <td height="1"><img src="images/v_sdt_kr_btm.gif" width="5" height="5"></td>
+                <td><img src="images/dot.gif" width="1" height="1" hspace="1"></td>
+                <td><img src="images/v_sdt_kn_btm.gif" width="5" height="5"></td>
+              </tr>
+            </table>

@@ -1,0 +1,24 @@
+.tab-pane {
+	WIDTH: 100%; POSITION: relative
+}
+.dynamic-tab-pane-control .tab-row .tab {
+	BORDER-RIGHT: rgb(120,172,255) 1px double; PADDING-RIGHT: 6px; BORDER-TOP: 0px; DISPLAY: inline; PADDING-LEFT: 6px; FONT-WEIGHT: bold; FONT-SIZE: 11px; Z-INDEX: 1; BACKGROUND: #cbe0fa; FLOAT: left; PADDING-BOTTOM: 3px; MARGIN: 1px -5px 1px 5px; BORDER-LEFT: 0px; CURSOR: pointer; PADDING-TOP: 3px; BORDER-BOTTOM: 0px; FONT-FAMILY: Verdana, Helvetica, Arial; POSITION: relative; TOP: 0px
+}
+.dynamic-tab-pane-control .tab-row .selected {
+	BORDER-RIGHT: #ff9f00 1px solid; PADDING-RIGHT: 6px; BORDER-TOP: #ff9f00 1px solid; PADDING-LEFT: 6px; Z-INDEX: 3; BACKGROUND: #e3f0ff; PADDING-BOTTOM: 5px; MARGIN: 1px -6px -2px 0px; BORDER-LEFT: #ff9f00 1px solid; PADDING-TOP: 2px; BORDER-BOTTOM: 0px; TOP: -2px
+}
+.dynamic-tab-pane-control .tab-row .tab A {
+	FONT-WEIGHT: normal; FONT-SIZE: 11px; CURSOR: pointer; COLOR: #2a3faa; LINE-HEIGHT: normal; FONT-STYLE: normal; FONT-FAMILY: Arial, Helvetica, sans-serif; TEXT-DECORATION: none
+}
+.dynamic-tab-pane-control .tab-row .hover A {
+	FONT-WEIGHT: normal; FONT-SIZE: 11px; COLOR: #2a3f00
+}
+.dynamic-tab-pane-control .tab-row .selected A {
+	FONT-WEIGHT: bold
+}
+.dynamic-tab-pane-control .tab-page {
+	CLEAR: both; BORDER-RIGHT: #ff9f00 1px solid; PADDING-RIGHT: 10px; BORDER-TOP: #ff9f00 1px solid; PADDING-LEFT: 10px; FONT-WEIGHT: normal; Z-INDEX: 2; PADDING-BOTTOM: 10px; BORDER-LEFT: #ff9f00 1px solid; PADDING-TOP: 10px; BORDER-BOTTOM: #ff9f00 1px solid; POSITION: relative; TOP: -2px; BACKGROUND-COLOR: #e3f0ff
+}
+.dynamic-tab-pane-control .tab-row {
+	FONT-WEIGHT: normal; Z-INDEX: 1; WIDTH: 100%; WHITE-SPACE: nowrap; HEIGHT: 1.85em
+}

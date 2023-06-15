@@ -1,0 +1,186 @@
+  <div class="tab-page" style="postion:absolute"  id="tabPage1">
+    <h2 class="tab">Data Suami</h2>
+
+                <script type="text/javascript">
+                	tp1.addTabPage(document.getElementById("tabPage1"));
+                </script>
+
+                    <table class="TabSectionVisible" id="HeaderTAB" name="HeaderTAB" width="900">
+                      <tr>
+                        <td>
+                          <table align="center" width="100%" cellpadding="2" cellspacing="5" border="0">
+                            <tr>
+                              <td colspan="7"><input type="hidden" name="nama_suami" value="<%=kawinData.getRecord1().getWniObj().getRecord1().getNamaLgkp().toUpperCase()%>"></td>
+                            </tr>
+                            <tr>
+                              <td width="22%">
+                                <p style="line-height: 100%">NIK Suami<font color="#000099" class="asterish">*</font>
+                                </p>
+                              </td>
+                              <td width="1%">:</td>
+                              <td width="23%">
+                                <p style="line-height: 100%">
+                                  <input type="hidden" name="nik_suami" value="<%=request.getParameter("nik_suami")%>">
+                                  <input type="text" name="nik_suami" value="<%=request.getParameter("nik_suami")%>" size="17" class="boxdefault" maxlength="17" onKeyUp="return num1(form1.nik_suami)">
+                                  <b><b> </b></b></p>
+                              </td>
+                              <td width="3%">&nbsp;</td>
+                              <td width="24%">
+                                <p style="line-height: 100%">Nomor Kartu Keluarga</p>
+                              </td>
+                              <td width="1%">:</td>
+                              <td width="26%">
+                                <p style="line-height: 100%"><%=kawinData.getRecord1().getWniObj().getRecord1().getNoKk()%></p>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td width="22%">Nama Lengkap</td>
+                              <td width="1%">:</td>
+                              <td width="23%"><%=kawinData.getRecord1().getWniObj().getRecord1().getNamaLgkp().toUpperCase()%></td>
+                              <td width="3%">&nbsp;</td>
+                              <td width="24%">Pendidikan Terakhir<font color="#000099" class="asterish">*</font></td>
+                              <td width="1%">:</td>
+                              <td width="26%">
+                                <select
+                  name=pddk_akh_suami1 boxdefault2 class="boxdefault">
+                                  <option value="0" selected>-- Pilih Pendidikan
+                                  Terakhir --</option>
+                                  <option value="1">1 - Tidak/Belum Sekolah</option>
+                                  <option value="2">2 - Tidak Tamat SD/Sederajat</option>
+                                  <option value="3">3 - Tamat SD/Sederajat</option>
+                                  <option value="4">4 - SLTP/Sederajat</option>
+                                  <option value="5">5 - SLTA/Sederajat</option>
+                                  <option value="6">6 - Diploma I/II</option>
+                                  <option value="7">7 - Akademi/Diploma III/S.
+                                  Muda</option>
+                                  <option value="8">8 - Diploma IV/Strata I</option>
+                                  <option value="9">9 - Strata II</option>
+                                  <option value="10">10 - Strata III</option>
+                                </select>
+                                <select
+                  class="boxdefault" name="pddk_akh_suami2" disabled>
+                                  <option value="0" selected>-- Pilih Pendidikan Terakhir
+                                  --</option>
+                                  <option value="1">1 - ELementary</option>
+                                  <option value="2">2 - Junior Height School</option>
+                                  <option value="3">3 - Senior Hight School</option>
+                                  <option value="4">4 - Diploma</option>
+                                  <option value="5">5 - Bachelor</option>
+                                  <option value="6">6 - Master</option>
+                                  <option value="7">7 - Philosophy of Doctor</option>
+                                  <option value="8">8 - Others</option>
+                                </select>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td width="22%" valign="top">Alamat</td>
+                              <td width="1%" valign="top">:</td>
+                              <td colspan="5"><%=kawinData.getRecord1().getWniObj().getRecord1().getAlamat()%>, <br> <%=kawinData.getRecord1().getWniObj().getRecord1().getNoRt()%>, <%=kawinData.getRecord1().getWniObj().getRecord1().getNoRw()%>,<%=kawinData.getRecord1().getWniObj().getRecord1().getDusun()%>,<%=kawinData.getRecord1().getWniObj().getRecord1().getKodePos()%>,<%=kawinData.getRecord1().getWniObj().getRecord1().getTelp()%></td>
+                            </tr>
+                            <tr>
+                              <td width="22%">Agama
+<font color="#000099" class="asterish">*</font></td>
+                              <td width="1%">:</td>
+                              <td width="23%">
+<%=kawinData.getRecord1().getWniObj().getRecord1().getAgama()%>
+                              </td>
+                              <td width="3%">&nbsp;</td>
+                              <td width="24%">Jenis Pekerjaan<font color="#000099" class="asterish">*</font></td>
+                              <td width="1%">:</td>
+                              <td width="26%">
+                                <select
+                  name=jenis_pkrjn_suami1 boxdefault2 class="boxdefault">
+                                  <option value="0" selected>-- Pilih Jenis Pekerjaan
+                                  --</option>
+                                  <option value="1">1 - Pelajar/Mahasiswa</option>
+                                  <option value="2">2 - Mengurus Rumah Tangga</option>
+                                  <option value="3">3 - Pensiunan</option>
+                                  <option value="4">4 - Belum/Tidak Bekerja</option>
+                                  <option value="5">5 - Petani/Pekebun</option>
+                                  <option value="6">6 - Peternak</option>
+                                  <option value="7">7 - Nelayan/Perikanan</option>
+                                  <option value="8">8 - Industri</option>
+                                  <option value="9">9 - Konstruksi</option>
+                                  <option value="10">10 - Perdagangan</option>
+                                  <option value="11">11 - Transportasi</option>
+                                  <option value="12">12 - Pegawai Negeri Sipil</option>
+                                  <option value="13">13 - Tentara Nasional Indonesia</option>
+                                  <option value="14">14 - Kepolisian R.I.</option>
+                                  <option value="15">15 - Jasa Lainnya</option>
+                                  <option value="16">16 - Lainnya</option>
+                                </select>
+                                <select
+                  class="boxdefault" name="jenis_pkrjn_suami2" disabled>
+                                  <option value="0" selected>-- Pilih Jenis Pekerjaan
+                                  --</option>
+                                  <option value="1">1 - Trading and Industry</option>
+                                  <option value="2">2 - Forestry</option>
+                                  <option value="3">3 - Mining and Energy</option>
+                                  <option value="4">4 - Public Work</option>
+                                  <option value="5">5 - Farming</option>
+                                  <option value="6">6 - Religion</option>
+                                  <option value="7">7 - Bank and Financial</option>
+                                  <option value="8">8 - Health and Society</option>
+                                  <option value="9">9 - Tourism</option>
+                                  <option value="10">10 - Transportation and Communication</option>
+                                  <option value="11">11 - Culture and Education</option>
+                                  <option value="12">12 - Others</option>
+                                </select>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td width="22%">Keturunan</td>
+                              <td width="1%">:</td>
+                              <td width="23%">
+                                <select
+                  name=ktrunan_suami boxdefault2 class="boxdefault">
+                                  <option value="0" selected>-- Pilih Keturunan
+                                  --</option>
+                                  <option value="1">1 - Eropa</option>
+                                  <option value="2">2 - Cina/Timur Asing Lainnya</option>
+                                  <option value="3">3 - Pribumi Nasrani</option>
+                                  <option value="4">4 - Pribumi Non Nasrani</option>
+                                </select>
+                              </td>
+
+                              <td width="3%">&nbsp;</td>
+                              <td width="24%">Status Perkawinan Sebelum Nikah</td>
+                              <td width="1%">:</td>
+                              <td width="26%"><%=kawinData.getRecord1().getWniObj().getRecord1().getStatKwn()%></td>
+                            </tr>
+
+                           <tr>
+                              <td width="22%">Perkawinan Yang Ke</td>
+                              <td width="1%">:</td>
+                              <td width="23%">
+                                <input type="text" name="kwn_ke_suami" <%if(request.getParameter("kwn_ke_suami")!=null){%>value="<%=request.getParameter("kwn_ke_suami")%>"<%}%> size="2" maxlength="2" class="boxdefault" onKeyUp="return num(form1.kwn_ke_suami)">
+                              </td>
+                              <td width="3%">&nbsp;</td>
+                              <td width="24%">Istri Yang Ke (bagi poligami)</td>
+                              <td width="1%">:</td>
+                              <td width="26%">
+                                <input type="text" name="istri_ke" <%if(request.getParameter("istri_ke")!=null){%>value="<%=request.getParameter("istri_ke")%>"<%}%> size="2" maxlength="2" class="boxdefault"  onKeyUp="return num(form1.istri_ke)">
+                              </td>
+                            </tr>
+                            <tr>
+                              <td width="22%">Kewarganegaraan</td>
+                              <td width="1%">:</td>
+                              <td width="23%">WNI</td>
+                              <td width="3%">&nbsp;</td>
+                              <td width="24%">Kebangsaan (Bagi WNA)</td>
+                              <td width="1%">:</td>
+                              <td width="26%">-</td>
+                            </tr>
+                          </table>
+                        </td>
+  </tr>
+</table>
+<script language="JavaScript">
+form1.pddk_akh_suami1.options[<%=kawinData.getRecord1().getWniObj().getRecord1().getPddkAkh()%>].selected=true
+form1.jenis_pkrjn_suami1.options[<%=kawinData.getRecord1().getWniObj().getRecord1().getJenisPkrjn()%>].selected=true
+<%if(request.getParameter("ktrunan_suami")!=null)
+{%>
+form1.ktrunan_suami.options[<%=request.getParameter("ktrunan_suami")%>].selected=true
+<%}%>
+</script>
+ </div>

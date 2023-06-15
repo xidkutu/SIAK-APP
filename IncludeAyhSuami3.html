@@ -1,0 +1,217 @@
+  <div class="tab-page" name="t1" style="postion:absolute" id="tabPage2">
+    <h2 class="tab">Data Ayah dari Suami</h2>
+
+                <script type="text/javascript">
+                	tp1.addTabPage(document.getElementById("tabPage2"));
+                </script>
+
+                    <table class="TabSectionVisible" id="HeaderTAB" name="HeaderTAB" width="900">
+                      <tr>
+                        <td>
+                          <table width="100%" align="center" cellpadding="2" cellspacing="2" border="0">
+                            <tr>
+                              <td colspan="7"> </td>
+                            </tr>
+                            <tr>
+                              <td colspan="7">&nbsp;</td>
+                            </tr>
+                            <tr>
+                              <td width="22%">NIK Ayah dari Suami<font color="#000099" class="asterish">*</font></td>
+                              <td width="1%">:</td>
+                              <td width="23%">
+                                <input type="radio" name="radiobutton" value="Ada" onClick="return radioValid()">
+                                Ada<br>
+                                <input type="radio" name="radiobutton" value="Tidak Ada" onClick="return radioValid1()">
+                                Tidak Ada</td>
+                              <td width="3%">&nbsp;</td>
+                              <td width="24%">Warga Negara Ayah dari Suami<font color="#000099" class="asterish">*</font></td>
+                              <td width="1%">:</td>
+                              <td width="26%">
+                                <input type="radio" name="radiobutton1" value="1" onClick="return radioValid2()">
+                                WNI<br>
+                                <input type="radio" name="radiobutton1" value="2" onClick="return radioValid3()">
+                                WNA</td>
+                            </tr>
+                            <tr>
+                              <td width="22%">
+                                <p style="line-height: 100%">Nomor Induk Kependudukan</p>
+                              </td>
+                              <td width="1%">:</td>
+                              <td width="23%">
+                                <p style="line-height: 100%">
+                                  <input type="text" name="nik_ayh_dr_suami" size="17" class="boxdefault" maxlength="17" onKeyUp="return num1(form1.nik_ayh_dr_suami)">
+                                  <b><b> </b></b></p>
+                              </td>
+                              <td width="3%">&nbsp;</td>
+                              <td width="24%">
+                                <p style="line-height: 100%">Nama Lengkap<font color="#000099" class="asterish">*</font></p>
+                              </td>
+                              <td width="1%">:</td>
+                              <td width="26%">
+                                <p style="line-height: 100%">
+                                  <input type="text" name="nama_ayh_suami" size="22" class="boxdefault" maxlength="60" onKeyUp="return char(form1.nama_ayh_suami)" disabled>
+                                </p>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td width="22%">Agama<font color="#000099" class="asterish">*</font></td>
+                              <td width="1%">:</td>
+                              <td width="23%">
+                                <select
+                  name=agama_ayh_suami boxdefault2 class="boxdefault">
+                                  <option value="0" selected>-- Pilih Agama --</option>
+                                  <option value="Islam">Islam</option>
+                                  <option value="Kristen">Kristen</option>
+                                  <option value="Katholik">Katholik</option>
+                                  <option value="Hindu">Hindu</option>
+                                  <option value="Budha">Budha</option>
+                                </select>
+                              </td>
+                              <td width="3%">&nbsp;</td>
+                              <td width="24%">Tempat Lahir </td>
+                              <td width="1%">:</td>
+                              <td width="26%">
+                                <input type="text" name="tmpt_lhr_ayh_suami" size="22" class="boxdefault" maxlength="60" onKeyUp="return char(form1.tmpt_lhr_ayh_suami)" disabled>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td width="22%"> Tanggal Lahir<font color="#000099" class="asterish">*</font></td>
+                              <td width="1%">:</td>
+                              <td width="23%">
+                                <table width="100" border="0" cellspacing="3" cellpadding="0">
+                                  <tr>
+                                    <td>
+                                      <input
+                                class=boxdefault size=2 name=tgl_lhr_ayh_suami_dd maxlength="2" onKeyUp="return tab3()" disabled >
+                                    </td>
+                                    <td>/ </td>
+                                    <td>
+                                      <input
+                                class=boxdefault size=2 name=tgl_lhr_ayh_suami_mm maxlength="2" onKeyUp="return tab4()" disabled>
+                                    </td>
+                                    <td>/</td>
+                                    <td>
+                                      <input
+                                class=boxdefault size=4 name=tgl_lhr_ayh_suami_yy maxlength="4" onKeyUp="return tab5()" disabled>
+                                    </td>
+                                  </tr>
+                                </table>
+                              </td>
+                              <td width="3%">&nbsp;</td>
+                              <td width="24%">Jenis Pekerjaan<font color="#000099" class="asterish">*</font>
+                              </td>
+                              <td width="1%">&nbsp;</td>
+                              <td width="26%">
+                                <select
+                  name=jenis_pkrjn_ayh_suami1 boxdefault2 class="boxdefault" disabled>
+                                  <option value="0" selected>-- Pilih Jenis Pekerjaan
+                                  --</option>
+                                  <option value="1">1 - Pelajar/Mahasiswa</option>
+                                  <option value="2">2 - Mengurus Rumah Tangga</option>
+                                  <option value="3">3 - Pensiunan</option>
+                                  <option value="4">4 - Belum/Tidak Bekerja</option>
+                                  <option value="5">5 - Petani/Pekebun</option>
+                                  <option value="6">6 - Peternak</option>
+                                  <option value="7">7 - Nelayan/Perikanan</option>
+                                  <option value="8">8 - Industri</option>
+                                  <option value="9">9 - Konstruksi</option>
+                                  <option value="10">10 - Perdagangan</option>
+                                  <option value="11">11 - Transportasi</option>
+                                  <option value="12">12 - Pegawai Negeri Sipil</option>
+                                  <option value="13">13 - Tentara Nasional Indonesia</option>
+                                  <option value="14">14 - Kepolisian R.I.</option>
+                                  <option value="15">15 - Jasa Lainnya</option>
+                                  <option value="16">16 - Lainnya</option>
+                                </select>
+                                <select
+                  class="boxdefault" name="jenis_pkrjn_ayh_suami2" disabled>
+                                  <option value="0" selected>-- Pilih Jenis Pekerjaan
+                                  --</option>
+                                  <option value="1">1 - Trading and Industry</option>
+                                  <option value="2">2 - Forestry</option>
+                                  <option value="3">3 - Mining and Energy</option>
+                                  <option value="4">4 - Public Work</option>
+                                  <option value="5">5 - Farming</option>
+                                  <option value="6">6 - Religion</option>
+                                  <option value="7">7 - Bank and Financial</option>
+                                  <option value="8">8 - Health and Society</option>
+                                  <option value="9">9 - Tourism</option>
+                                  <option value="10">10 - Transportation and Communication</option>
+                                  <option value="11">11 - Culture and Education</option>
+                                  <option value="12">12 - Others</option>
+                                </select>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td width="22%"> Alamat<font color="#000099" class="asterish">*</font></td>
+                              <td width="1%">:</td>
+                              <td colspan="5">
+                                <input type="text" name="alamat_ayh_suami" size="30" class="boxdefault" maxlength="120" disabled>
+                                RT<font color="#000099" class="asterish"> </font>
+                                <input type="text" name="rt_ayh_suami" size="3" class="boxdefault" maxlength="3" onKeyUp="return num(form1.rt_ayh_suami)" disabled>
+                                RW
+                                <input type="text" name="rw_ayh_suami" size="3" class="boxdefault" maxlength="3" onKeyUp="return num(form1.rw_ayh_suami)" disabled>
+                                Dusun/Kampung/Dukuh
+                                <input type="text" name="dusun_ayh_suami" size="22" class="boxdefault" maxlength="40" disabled>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td width="22%">
+                                <div align="right">Kode Pos</div>
+                              </td>
+                              <td width="1%">:</td>
+                              <td width="23%">
+                                <input type="text" name="kpos_ayh_suami" size="5" class="boxdefault" maxlength="5" disabled>
+                              </td>
+                              <td width="3%">&nbsp;</td>
+                              <td width="24%">
+                                <div align="right">Telepon</div>
+                              </td>
+                              <td width="1%">:</td>
+                              <td width="26%">
+                                <input type="text" name="tlp_ayh_suami" size="20" class="boxdefault" maxlength="20" disabled>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td width="22%">
+                                <div align="right">Nama Provinsi <font color="#000099" class="asterish">*</font>
+                                  </div>
+                              </td>
+                              <td width="1%">:</td>
+<td width="23%">
+  <input type="text" name="nama_prop_ayh_suami" size="30" class="boxdefault" maxlength="120" value="<%=nama_prop_ayh_suami%>">
+</td>
+                              <td width="3%">&nbsp;</td>
+                              <td width="24%">
+                                <div align="right">Nama Kabupaten/Kota<font color="#000099" class="asterish">*</font>
+                                  </div>
+                              </td>
+                              <td width="1%">:</td>
+<td width="26%">
+ <input type="text" name="nama_kab_ayh_suami" size="30" class="boxdefault" maxlength="120" value="<%=nama_kab_ayh_suami%>">
+</td>
+                            </tr>
+                            <tr>
+                              <td width="22%">
+                                <div align="right">Nama Kecamatan <font color="#000099" class="asterish">*</font>
+                                  </div>
+                              </td>
+                              <td width="1%">:</td>
+<td width="23%">
+   <input type="text" name="nama_kec_ayh_suami" size="30" class="boxdefault" maxlength="120" value="<%=nama_kec_ayh_suami%>">
+</td>
+                              <td width="3%">&nbsp;</td>
+                              <td width="24%">
+ <div align="right">Nama Desa/Kelurahan<font color="#000099" class="asterish">*</font>
+   </div>
+</td>
+<td width="1%">:</td>
+   <td width="26%">
+        <input type="text" name="nama_kel_ayh_suami" size="30" class="boxdefault" maxlength="120" value="<%=nama_kel_ayh_suami%>">
+   </td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</div>

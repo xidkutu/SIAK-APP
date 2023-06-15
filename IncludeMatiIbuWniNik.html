@@ -1,0 +1,206 @@
+<div class="tab-page" name="t1" style="postion:absolute" id="tabPage2">
+                    <h2 class="tab">Data Ibu</h2>
+
+                <script type="text/javascript">
+                	tp1.addTabPage(document.getElementById("tabPage2"));
+                </script>
+                    <table class="TabSectionVisible" id="HeaderTAB" name="HeaderTAB" width="900">
+                      <tr>
+                        <td>
+                          <table align="center" width="100%" cellpadding="2" cellspacing="2" border="0">
+                            <tr>
+                              <td colspan="7"> </td>
+                            </tr>
+                            <tr>
+                              <td colspan="7">&nbsp;</td>
+                            </tr>
+                            <tr>
+                              <td width="22%">NIK Ibu<font color="#000099" class="asterish">*</font></td>
+                              <td width="1%">:</td>
+                              <td width="23%">
+                                <input type="radio" name="radiobutton" value="Ada" onClick="return radioValid3()" <%if(request.getParameter("radiobutton")!=null && request.getParameter("radiobutton").trim().equals("Ada")){%>checked<%}else{%>disabled<%}%>>
+                                Ada<br>
+                                <input type="radio" name="radiobutton" value="Tidak Ada" onClick="return radioValid4()" <%if(request.getParameter("radiobutton")!=null && request.getParameter("radiobutton").trim().equals("Tidak Ada")){%>checked<%}else{%>disabled<%}%>>
+                                Tidak Ada</td>
+                              <td width="3%">&nbsp;</td>
+                              <td width="24%">Warga Negara Ibu<font color="#000099" class="asterish">*</font></td>
+                              <td width="1%">&nbsp;</td>
+                              <td width="26%">
+                                <input type="radio" name="radiobutton1" value="1" onClick="return radioValid1()" <%if(request.getParameter("radiobutton1")!=null && request.getParameter("radiobutton1").trim().equals("1")){%>checked<%}else{%>disabled<%}%>>
+                                WNI<br>
+                                <input type="radio" name="radiobutton1" value="2" onClick="return radioValid2()" <%if(request.getParameter("radiobutton1")!=null && request.getParameter("radiobutton1").trim().equals("2")){%>checked<%}else{%>disabled<%}%>>
+                                WNA</td>
+                            </tr>
+                            <tr>
+                              <td width="22%">
+                                <p style="line-height: 100%">Nomor Induk Kependudukan</p>
+                              </td>
+                              <td width="1%">:</td>
+
+            <td width="23%">
+              <p style="line-height: 100%">
+                <input type="text" name="nik_ibu" size="18" class="boxdefault" maxlength="17"  value='<%=((request.getParameter("nik_ibu")==null)?"":request.getParameter("nik_ibu"))%>' onKeyUp="return num1(form1.nik_ibu)" onblur = "return validateWNIbu(this,document.form1.radiobutton1)">
+                <b><b> </b></b></p>
+                              </td>
+                              <td width="3%">&nbsp;</td>
+                              <td width="24%">
+                                <p style="line-height: 100%">Nama Lengkap<font color="#000099" class="asterish">*</font></p>
+                              </td>
+                              <td width="1%">:</td>
+
+            <td width="26%">
+              <p style="line-height: 100%">
+                <input type="text" name="nama_ibu" size="27" value="<%=wnidataKlr.getWniObj().getRecord2().getNamaLgkp()%>" class="boxdefault" maxlength="60" onFocus="this.blur()">
+              </p>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td width="22%">
+                                <p style="line-height: 100%">Tanggal Lahir<font color="#000099" class="asterish">*</font></p>
+                              </td>
+                              <td width="1%">:</td>
+                              <td width="23%">
+                                <table width="100" border="0" cellspacing="3" cellpadding="0">
+                                  <tr>
+
+                  <td>
+                    <input
+                                class=boxdefault size=2 name=no_akta_lhr_dd maxlength="2" value="<%=getDD(wnidataKlr.getWniObj().getRecord2().getTglLhr())%>" onKeyUp="return tab3()" onFocus="this.blur()">
+                  </td>
+                                    <td>/ </td>
+
+                  <td>
+                    <input
+                                class=boxdefault size=2 name=no_akta_lhr_mm maxlength="2" value="<%=getMM(wnidataKlr.getWniObj().getRecord2().getTglLhr())%>" onKeyUp="return tab4()" onFocus="this.blur()">
+                  </td>
+                                    <td>/</td>
+
+                  <td>
+                    <input
+                                class=boxdefault size=4 name=no_akta_lhr_yy maxlength="4" value="<%=getYY(wnidataKlr.getWniObj().getRecord2().getTglLhr())%>" onKeyUp="return tab5()" onFocus="this.blur()">
+                  </td>
+                                  </tr>
+                                </table>
+                              </td>
+                              <td width="3%">&nbsp;</td>
+                              <td width="24%">
+                                <p style="line-height: 100%"> Jenis Pekerjaan<font color="#000099" class="asterish">*</font></p>
+                              </td>
+                              <td width="1%">:</td>
+                              <td width="26%">
+                                <p style="line-height: 100%">
+                                  <select
+                  name=jenis_pkrjn_ibu1 boxdefault2 class="boxdefault" disabled >
+                                    <option value="0" selected>-- Pilih Jenis
+                                    Pekerjaan --</option>
+                                    <option value="1">1 - Pelajar/Mahasiswa</option>
+                                    <option value="2" >2 - Mengurus Rumah Tangga</option>
+                                    <option  value="3">3 - Pensiunan</option>
+                                    <option  value="4">4 - Belum/Tidak Bekerja</option>
+                                    <option  value="5">5 - Petani/Pekebun</option>
+                                    <option  value="6">6 - Peternak</option>
+                                    <option  value="7">7 - Nelayan/Perikanan</option>
+                                    <option  value="8">8 - Industri</option>
+                                    <option  value="9">9 - Konstruksi</option>
+                                    <option  value="10">10 - Perdagangan</option>
+                                    <option  value="11">11 - Transportasi</option>
+                                    <option  value="12">12 - Pegawai Negeri Sipil</option>
+                                    <option  value="13">13 - Tentara Nasional
+                                    Indonesia</option>
+                                    <option  value="14">14 - Kepolisian R.I.</option>
+                                    <option  value="15">15 - Jasa Lainnya</option>
+                                    <option  value="16">16 - Lainnya</option>
+                                  </select>
+              </p>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td width="22%">
+                                <p style="line-height: 100%">Alamat<font color="#000099" class="asterish">*</font></p>
+                              </td>
+                              <td width="1%">:</td>
+
+            <td colspan="5">
+              <p style="line-height: 100%">
+                <input type="text" name="alamat_ibu" size="30" class="boxdefault" value="<%=wnidataKlr.getWniObj().getRecord2().getAlamat()%>" maxlength="120" onFocus="this.blur()">
+                RT<font color="#000099" class="asterish"> </font>
+                <input type="text" name="no_rt_ibu" value="<%=((wnidataKlr.getWniObj().getRecord2().getNoRt()==null)?"":wnidataKlr.getWniObj().getRecord2().getNoRt().toString())%>" size="3" class="boxdefault" maxlength="3"  onKeyUp="return num(form1.no_rt_ibu)" onFocus="this.blur()">
+                RW
+                <input type="text" name="no_rw_ibu" size="3" class="boxdefault" value="<%=((wnidataKlr.getWniObj().getRecord2().getNoRw()==null)?"":wnidataKlr.getWniObj().getRecord2().getNoRw().toString())%>" maxlength="3" onKeyUp="return num(form1.no_rw_ibu)" onFocus="this.blur()">
+                Dusun/Kampung/Dukuh
+                <input type="text" name="dusun_ibu" size="22" class="boxdefault" value="<%=((wnidataKlr.getWniObj().getRecord2().getDusun()==null)?"":wnidataKlr.getWniObj().getRecord2().getDusun())%>" maxlength="60" onFocus="this.blur()">
+              </p>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td width="22%">
+                                <div align="right">Kode Pos</div>
+                              </td>
+                              <td width="1%">:</td>
+
+            <td width="23%">
+              <input type="text" name="kodepos_ibu" size="7" value="<%=((wnidataKlr.getWniObj().getRecord2().getKodePos()==null)?"":wnidataKlr.getWniObj().getRecord2().getKodePos().toString())%>" class="boxdefault" maxlength="5" onFocus="this.blur()">
+            </td>
+                              <td width="3%">&nbsp;</td>
+                              <td width="24%">
+                                <div align="right">Telepon</div>
+                              </td>
+                              <td width="1%">:</td>
+
+            <td width="26%">
+              <input type="text" name="telp_ibu" value="<%=((wnidataKlr.getWniObj().getRecord2().getTelp()==null)?"":wnidataKlr.getWniObj().getRecord2().getTelp())%>" size="20" class="boxdefault" maxlength="20" onFocus="this.blur()">
+            </td>
+                            </tr>
+                            <tr>
+                              <td width="22%">
+                                <div align="right">Nama Provinsi<font color="#000099" class="asterish">*</font>
+                                  </div>
+                              </td>
+                              <td width="1%">:</td>
+                              <td width="23%">
+                                <input type="hidden" name="no_prop_ibu" value="">
+
+     <input class="boxdefault" size=30 name="nama_prop_ibu" maxlength="60" onKeyUp="" <%if(wnidataKlr.getWniObj().getRecord2().getNoProp()!=null){%>value="<%=wnidataKlr.getWniObj().getRecord2().getNoProp().toString()%>"<%}%>>
+
+                              </td>
+                              <td width="3%">&nbsp;</td>
+                              <td width="24%">
+                                <div align="right">Nama Kabupaten/Kota<font color="#000099" class="asterish">*</font></div>
+                              </td>
+                              <td width="1%">:</td>
+                              <td width="26%">
+                                <input type="hidden" name="no_kab_ibu" value="">
+
+     <input class="boxdefault" size=30 name="nama_kab_ibu" maxlength="60" onKeyUp="" <%if(wnidataKlr.getWniObj().getRecord2().getNoKab()!=null){%>value="<%=wnidataKlr.getWniObj().getRecord2().getNoKab().toString()%>"<%}%>>
+
+                              </td>
+                            </tr>
+                            <tr>
+                              <td width="22%">
+                                <div align="right">Nama Kecamatan<font color="#000099" class="asterish">*</font>
+                                  </div>
+                              </td>
+                              <td width="1%">:</td>
+                              <td width="23%">
+                                <input type="hidden" name="no_kec_ibu" value="">
+     <input class="boxdefault" size=30 name="nama_kec_ibu" maxlength="60" onKeyUp="" <%if(wnidataKlr.getWniObj().getRecord2().getNoKec()!=null){%>value="<%=wnidataKlr.getWniObj().getRecord2().getNoKec().toString()%>"<%}%>>
+
+
+                              </td>
+                              <td width="3%">&nbsp;</td>
+                              <td width="24%">
+
+              <div align="right">Nama Desa/Kelurahan<font color="#000099" class="asterish">*</font>
+                </div>
+                              </td>
+                              <td width="1%">:</td>
+                              <td width="26%">
+   <input type="hidden" name="no_kel_ibu" value="">
+  <input class="boxdefault" size=30 name="nama_kel_ibu" maxlength="60" onKeyUp="" <%if(wnidataKlr.getWniObj().getRecord2().getNoKel()!=null){%>value="<%=wnidataKlr.getWniObj().getRecord2().getNoKel().toString()%>"<%}%>>
+                           </td>
+                            </tr>
+                          </table>
+                        </td>
+      </tr>
+    </table>
+  </div>

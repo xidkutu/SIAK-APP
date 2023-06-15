@@ -1,0 +1,249 @@
+  <div class="tab-page" style="postion:absolute" id="tabPage1">
+                    <h2 class="tab">Data Jenazah</h2>
+
+		<script type="text/javascript">
+                	tp1.addTabPage(document.getElementById("tabPage1"));
+                </script>
+
+
+                    <table class="TabSectionVisible" id="HeaderTAB" name="HeaderTAB" width="900">
+                      <tr>
+                        <td>
+                          <table align="center" width="100%" cellpadding="2" cellspacing="5" border="0">
+                            <tr>
+                              <td colspan="7"> </td>
+                            </tr>
+                            <tr>
+                              <td width="22%">
+                                <p style="line-height: 100%">NIK Jenazah<font color="#000099" class="asterish">*</font>
+                                </p>
+                              </td>
+                              <td width="1%">:</td>
+                              <td width="23%">
+                                <p style="line-height: 100%">
+                                  <input type="text" name="nik_jnsah" size="17" value='<%=((request.getParameter("nik_jnsah")==null)?"":request.getParameter("nik_jnsah"))%>' class="boxdefault" maxlength="17" onKeyUp="return num1(form1.nik_jnsah)">
+                                  <b><b> </b></b></p>
+                              </td>
+                              <td width="3%">&nbsp;</td>
+                              <td width="24%">
+                                <p style="line-height: 100%">Nama Lengkap</p>
+                              </td>
+                              <td width="1%">:</td>
+                              <td width="26%">
+
+              <p style="line-height: 100%">-</p>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td width="22%"> Alamat</td>
+                              <td width="1%"> :</td>
+
+            <td colspan="5">- </td>
+                            </tr>
+                            <tr>
+                              <td width="22%">
+                                <p style="line-height: 100%">Jenis Kelamin</p>
+                              </td>
+                              <td width="1%">:</td>
+                              <td width="23%">
+
+              <p style="line-height: 100%">-</p>
+                              </td>
+                              <td width="3%">&nbsp;</td>
+                              <td width="24%">
+                                <p style="line-height: 100%">Tanggal Lahir</p>
+                              </td>
+                              <td width="1%">:</td>
+                              <td width="26%">
+
+              <p style="line-height: 100%">-</p>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td width="22%">
+                                <p style="line-height: 100%">Tempat Lahir</p>
+                              </td>
+                              <td width="1%">:</td>
+                              <td width="23%">
+
+              <p style="line-height: 100%">-</p>
+                              </td>
+                              <td width="3%">&nbsp;</td>
+                              <td width="24%">
+                                <p style="line-height: 100%">Jenis Pekerjaan</p>
+                              </td>
+                              <td width="1%">:</td>
+                              <td width="26%">
+
+              <p style="line-height: 100%">-</p>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td width="22%">Kewarganegaraan</td>
+                              <td width="1%">:</td>
+
+            <td width="23%">-</td>
+                              <td width="3%">&nbsp;</td>
+
+            <td width="24%">Keturunan</td>
+                              <td width="1%">:</td>
+                              <td width="26%">
+                                <select size="1" name="ktrunan_jnsah" class="boxdefault">
+                                  <option value="0" selected>-- Pilih Keturunan
+                                  --</option>
+                                  <option value="1">1 - Eropa</option>
+                                  <option value="2">2 - Cina/Timur Asing Lainnya</option>
+                                  <option value="3">3 - Pribumi Nasrani</option>
+                                  <option value="4">4 - Pribumi Non Nasrani</option>
+                                  <option value="5">5 - Lainnya</option>
+                                </select>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td width="22%">Kebangsaan (Bagi WNA)</td>
+                              <td width="1%">:</td>
+							  <td width="23%">-</td>
+                              <td width="3%">&nbsp;</td>
+                              <td width="24%">Anak ke<font color="#000099" class="asterish">*</font></td>
+                              <td width="1%">:</td>
+                              <td width="26%">
+                                <input type="text" name="anak_ke_mt" size="2" class="boxdefault" maxlength="2">
+                              </td>
+                            </tr>
+                            <tr>
+                              <td width="22%">Tanggal Kematian<font color="#000099" class="asterish">*</font></td>
+                              <td width="1%">:</td>
+                              <td width="23%">
+                                <table width="100" border="0" cellspacing="3" cellpadding="0">
+                                  <tr>
+                                    <td>
+                                      <input
+                                class=boxdefault size=2 name="tgl_mati_dd" value='<%=((request.getParameter("tgl_mati_dd")==null)?"":request.getParameter("tgl_mati_dd"))%>' maxlength="2" onKeyUp="return dd2mm(form1.tgl_mati_dd, form1.tgl_mati_mm)">
+                                    </td>
+                                    <td>/ </td>
+                                    <td>
+                                      <input
+                                class=boxdefault size=2 name=tgl_mati_mm value='<%=((request.getParameter("tgl_mati_mm")==null)?"":request.getParameter("tgl_mati_mm"))%>' maxlength="2" onKeyUp="return mm2yy(form1.tgl_mati_mm, form1.tgl_mati_yy)">
+                                    </td>
+                                    <td>/</td>
+                                    <td>
+                                      <input
+                                class=boxdefault size=4 name=tgl_mati_yy value='<%=((request.getParameter("tgl_mati_yy")==null)?"":request.getParameter("tgl_mati_yy"))%>' maxlength="4" onKeyUp="return yy2next(form1.tgl_mati_dd, form1.tgl_mati_mm, form1.tgl_mati_yy, form1.pukul_mt1)">
+                                    </td>
+                                  </tr>
+                                </table>
+                              </td>
+                              <td width="3%">&nbsp;</td>
+                              <td width="24%">Pukul<font color="#000099" class="asterish">*</font></td>
+                              <td width="1%">:</td>
+                              <td width="26%" valign="middle">
+                                <input type="text" name="pukul_mt1" value='<%=((request.getParameter("pukul_mt1")==null)?"":request.getParameter("pukul_mt1"))%>' size="2" class="boxdefault" maxlength="2" onKeyUp="return tab()">
+                                <b>:</b>
+                                <input type="text" name="pukul_mt2" value='<%=((request.getParameter("pukul_mt2")==null)?"":request.getParameter("pukul_mt2"))%>' size="2" class="boxdefault" maxlength="2" onKeyUp="return tab1()">
+                                <select size="1" name="wkt_pkl_mt" class="boxdefault">
+                                  <option value="0" selected>-- Pilih Waktu --</option>
+                                  <option value="1">WIB</option>
+                                  <option value="2">WITA</option>
+                                  <option value="3">WIT</option>
+                                </select>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td width="22%">
+                                <p style="line-height: 100%">Sebab Kematian<font color="#000099" class="asterish">*</font></p>
+                              </td>
+                              <td width="1%">:</td>
+                              <td width="23%">
+                                <p style="line-height: 100%">
+                                  <select size="1" name="sbab_mati" class="boxdefault">
+                                    <option value="0" selected>-- Pilih Sebab
+                                    Kematian --</option>
+                                    <option value="1">1 - Sakit Biasa/Tua</option>
+                                    <option value="2">2 - Wabah Penyakit</option>
+                                    <option value="3">3 - Kecelakaan</option>
+                                    <option value="4">4 - Kriminalitas</option>
+                                    <option value="5">5 - Bunuh Diri</option>
+                                    <option value="6">6 - Melahirkan</option>
+                                    <option value="7">7 - Lainnya</option>
+                                  </select>
+                                </p>
+                              </td>
+                              <td width="3%">&nbsp;</td>
+                              <td width="24%">
+                                <p style="line-height: 100%">Tempat Kematian<font color="#000099" class="asterish">*</font></p>
+                              </td>
+                              <td width="1%">:</td>
+                              <td width="26%">
+                                <p style="line-height: 100%">
+                                  <input type="text" name="tmpt_mati" value='<%=((request.getParameter("tmpt_mati")==null)?"":request.getParameter("tmpt_mati"))%>' size="22" class="boxdefault" maxlength="60" onKeyUp="return char(form1.tmpt_mati)">
+                                </p>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td width="22%">
+                                <p style="line-height: 100%">Yang Menerangkan
+                                  Kematian<font color="#000099" class="asterish">*</font></p>
+                              </td>
+                              <td width="1%">:</td>
+                              <td width="23%">
+                                <p style="line-height: 100%">
+                                  <select size="1" name="yg_mnerang" class="boxdefault">
+                                    <option value="0" selected>-- Pilih Yang Menerangkan
+                                    --</option>
+                                    <option value="1">1 - Dokter</option>
+                                    <option value="2">2 - Tenaga Kesehatan Lain</option>
+                                    <option value="3">3 - Kepolisian</option>
+                                    <option value="4">4 - Lainnya</option>
+                                  </select>
+                                </p>
+                              </td>
+
+                              <td width="3%">&nbsp;</td>
+                              <td width="24%">
+                                <p style="line-height: 100%">Tempat Penetapan
+                                  Pengadilan Negeri </p>
+                              </td>
+                              <td width="1%">:</td>
+                              <td width="26%">
+                                <p style="line-height: 100%">
+                                  <input type="text" name="pnetap_pn" size="22" value='<%=((request.getParameter("pnetap_pn")==null)?"":request.getParameter("pnetap_pn"))%>' class="boxdefault" maxlength="60">
+                                </p>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td width="22%">Nomor Penetapan Pengadilan Negeri
+                              </td>
+                              <td width="1%">:</td>
+                              <td width="23%">
+                                <input type="text" name="no_pnetap" value='<%=((request.getParameter("no_pnetap")==null)?"":request.getParameter("no_pnetap"))%>' size="22" class="boxdefault" maxlength="40">
+                              </td>
+                              <td width="3%">&nbsp;</td>
+                              <td width="24%">Tanggal Penetapan Pengadilan Negeri</td>
+                              <td width="1%">:</td>
+                              <td width="26%">
+                                <table width="100" border="0" cellspacing="3" cellpadding="0">
+                                  <tr>
+                                    <td>
+                                      <input
+                                class=boxdefault size=2 name=tgl_pnetap maxlength="2" value='<%=((request.getParameter("tgl_pnetap")==null)?"":request.getParameter("tgl_pnetap"))%>' onKeyUp="return dd2mm(form1.tgl_pnetap, form1.bln_pnetap)">
+                                    </td>
+                                    <td>/ </td>
+                                    <td>
+                                      <input
+                                class=boxdefault size=2 name=bln_pnetap maxlength="2" value='<%=((request.getParameter("bln_pnetap")==null)?"":request.getParameter("bln_pnetap"))%>' onKeyUp="return mm2yy(form1.bln_pnetap, form1.thn_pnetap)">
+                                    </td>
+                                    <td>/</td>
+                                    <td>
+                                      <input
+                                class=boxdefault size=4 name=thn_pnetap maxlength="4" value='<%=((request.getParameter("thn_pnetap")==null)?"":request.getParameter("thn_pnetap"))%>' onKeyUp="return yy2next(form1.tgl_pnetap, form1.bln_pnetap, form1.thn_pnetap, form1.thn_pnetap)">
+                                    </td>
+                                  </tr>
+                                </table>
+                              </td>
+                            </tr>
+                          </table>
+                        </td>
+  </tr>
+</table>
+
+   </div>

@@ -1,0 +1,174 @@
+A:link {
+	COLOR: #336633; TEXT-DECORATION: none; size: 11px
+}
+.title {
+	FONT-WEIGHT: bold; FONT-SIZE: 11px; FILTER: Alpha(Opacity=100) DropShadow(Color=#000000, OffX=1, OffY=1, Positive=1); COLOR: #99ff00
+}
+.shadow {
+	FILTER: Alpha(Opacity=100) DropShadow(Color=#000000, OffX=1, OffY=1, Positive=1)
+}
+.tablehead {
+	FONT-WEIGHT: bold; FONT-SIZE: 13px; COLOR: #ffffff; LINE-HEIGHT: normal; FONT-STYLE: normal; FONT-VARIANT: normal
+}
+.submenu {
+	FONT-WEIGHT: normal; FONT-SIZE: 16px; COLOR: #FF6633; FONT-STYLE: normal; FONT-FAMILY: "Arial Black"; FONT-VARIANT: normal
+}
+.submenu:hover {
+	FONT-WEIGHT: bold; FONT-SIZE: 9px; COLOR: #99ff00; TEXT-DECORATION: none
+}
+.map {
+	FONT-SIZE: 9px; COLOR: #ffffff; TEXT-DECORATION: none
+}
+.map:hover {
+	FONT-SIZE: 9px; COLOR: #99ff00
+}
+.subtitle {
+	FONT: bold 17px Arial, Helvetica, sans-serif; TEXT-TRANSFORM: none; COLOR: #003366; TEXT-DECORATION: none
+}
+.im {
+	FONT-WEIGHT: bold; FONT-SIZE: 9px; COLOR: #cccccc
+}
+.box {
+	BORDER-RIGHT: #999999 1px solid; BORDER-TOP: #999999 1px solid; FONT-SIZE: 10px; BORDER-LEFT: #999999 1px solid; COLOR: #cccccc; BORDER-BOTTOM: #999999 1px solid; FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif
+}
+TD {
+	FONT-SIZE: 11px; COLOR: #000000; FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif
+}
+.body {
+	SCROLLBAR-FACE-COLOR: #6699cc; SCROLLBAR-HIGHLIGHT-COLOR: #999999; SCROLLBAR-SHADOW-COLOR: #4f4f4f; SCROLLBAR-3DLIGHT-COLOR: #333333; SCROLLBAR-ARROW-COLOR: #99ff00; SCROLLBAR-TRACK-COLOR: #565652; SCROLLBAR-DARKSHADOW-COLOR: #000000
+}
+BODY {
+	SCROLLBAR-FACE-COLOR: #9999cc; SCROLLBAR-HIGHLIGHT-COLOR: #ccccff; SCROLLBAR-SHADOW-COLOR: #99ccff; SCROLLBAR-3DLIGHT-COLOR: #333333; SCROLLBAR-ARROW-COLOR: #99ff00; SCROLLBAR-TRACK-COLOR: #336699; SCROLLBAR-DARKSHADOW-COLOR: #000000
+}
+.boxblue {
+	BORDER-RIGHT: #6889d7 1px solid; BORDER-TOP: #6889d7 1px solid; FONT-SIZE: 10px; BORDER-LEFT: #6889d7 1px solid; COLOR: #ffffff; BORDER-BOTTOM: #6889d7 1px solid; FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif
+}
+.boxstandard {
+	BORDER-RIGHT: #999999 1px solid; BORDER-TOP: #999999 1px solid; FONT-SIZE: 9px; BORDER-LEFT: #999999 1px solid; COLOR: #000000; BORDER-BOTTOM: #999999 1px solid; FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif; BACKGROUND-COLOR: #cdd6e4
+}
+.v9 {
+	FONT-SIZE: 9px
+}
+.linkblue {
+	COLOR: #2bd5ff; TEXT-DECORATION: underline
+}
+.linkblue:hover {
+	COLOR: #ffffff; TEXT-DECORATION: none
+}
+.v10 {
+	FONT-SIZE: 10px
+}
+.v11 {
+	FONT-SIZE: 10px
+}
+.border1px {
+	BORDER-RIGHT: 1px solid; BORDER-TOP: 1px solid; BORDER-LEFT: 1px solid; BORDER-BOTTOM: 1px solid
+}
+.boxdefault {
+	BORDER-RIGHT: #000066 1px solid; BORDER-TOP: #000066 1px solid; FONT-WEIGHT: normal; FONT-SIZE: 11px; LEFT: 15px; BORDER-LEFT: #000066 1px solid; COLOR: #000000; BORDER-BOTTOM: #000066 1px solid; FONT-STYLE: normal; FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif
+}
+.boxdefault2 {
+	BORDER-RIGHT: #000066 1px solid; BORDER-TOP: #000066 1px solid; FONT-SIZE: 11px; LEFT: 15px; BORDER-LEFT: #000066 1px solid; COLOR: #000000; BORDER-BOTTOM: #000066 1px solid; FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif; BACKGROUND-COLOR: #b7c3d9
+}
+.linkdomun {
+	COLOR: #7c8fb3; TEXT-DECORATION: underline
+}
+.linkdomun:hover {
+	COLOR: #a4b1ca; TEXT-DECORATION: none
+}
+.tt {
+	BACKGROUND-POSITION: right top
+}
+.floatleft {
+	PADDING-RIGHT: 5px; FLOAT: left; PADDING-BOTTOM: 5px
+}
+.linkyellow {
+	FONT-WEIGHT: normal; FONT-SIZE: 9px; COLOR: #cc3300; LINE-HEIGHT: normal; FONT-STYLE: normal; FONT-VARIANT: normal
+}
+.asterish {
+	FONT-WEIGHT: bold; COLOR: #cc3300; TEXT-DECORATION: blink
+}
+.judul_utama {
+	FONT-WEIGHT: normal; FONT-SIZE: 16px; COLOR: #336699; LINE-HEIGHT: normal; FONT-STYLE: normal; FONT-FAMILY: "Arial Black"
+}
+A:link {
+	COLOR: #336633; TEXT-DECORATION: none; size: 11px
+}
+A:visited {
+	COLOR: #000080; TEXT-DECORATION: none; size: 11px
+}
+A:hover {
+	COLOR: #000099; TEXT-DECORATION: underline; size: 11px
+}
+A.mid {
+	COLOR: #336633; TEXT-DECORATION: none; size: 12px
+}
+A.mid:hover {
+	COLOR: #000099; TEXT-DECORATION: underline; size: 12px
+}
+.back_box {
+	FONT-WEIGHT: bold; FONT-SIZE: x-small; COLOR: #ffff00; FONT-STYLE: normal; FONT-FAMILY: Arial, Helvetica, sans-serif; BACKGROUND-COLOR: #003366
+}
+.subfield {
+	FONT: bold 14px Arial, Helvetica, sans-serif; TEXT-TRANSFORM: none; COLOR: #ffff00; TEXT-DECORATION: none
+}
+.subtitle2nd {
+	FONT: bold 12px Arial, Helvetica, sans-serif; TEXT-TRANSFORM: none; COLOR: #ffff00; TEXT-DECORATION: none
+}
+.text_MBlue {
+	FONT-WEIGHT: normal; FONT-SIZE: x-small; COLOR: #000000; FONT-STYLE: normal; FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif; FONT-VARIANT: normal
+}
+.catatan {
+	FONT: italic 10px Verdana, Arial, Helvetica, sans-serif; COLOR: #990000
+}
+.judul_utama {
+	FONT-VARIANT: normal
+}
+.C-header {
+	BACKGROUND-COLOR: #6c9ac4
+}
+.C-Field {
+	BACKGROUND-COLOR: #dde9f7
+}
+.C-BG {
+	BACKGROUND-COLOR: #82acd6
+}
+.C-Fonts {
+	FONT-WEIGHT: bold; FONT-SIZE: xx-small; COLOR: #ffffff; FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif; BACKGROUND-COLOR: #307cb6; FONT-VARIANT: normal
+}
+.underscore {
+	TEXT-DECORATION: underline
+}
+.sertifikat_e {
+	FONT: bold italic 10px Georgia; TEXT-DECORATION: overline
+}
+.sertifikat_i {
+	FONT-WEIGHT: normal; LINE-HEIGHT: normal; FONT-STYLE: normal; FONT-FAMILY: "Times New Roman", Times, serif; FONT-VARIANT: normal; TEXT-DECORATION: underline
+}
+.fonts_KTP {
+	FONT-SIZE: 7px; FONT-FAMILY: Arial, Helvetica, sans-serif
+}
+.font_TAB {
+	FONT-WEIGHT: bold; FONT-SIZE: xx-small; COLOR: #003366; FONT-FAMILY: Arial, Helvetica, sans-serif
+}
+.fonts_KTP_sub {
+	FONT-WEIGHT: bold; FONT-SIZE: 7px; FONT-FAMILY: Arial, Helvetica, sans-serif
+}
+.fonts_KTP_judul {
+	FONT-WEIGHT: bold; FONT-SIZE: 9px; FONT-FAMILY: Arial, Helvetica, sans-serif
+}
+.border {
+	BORDER-RIGHT: #9ac6fa 1px solid; BORDER-TOP: #9ac6fa 1px solid; BORDER-LEFT: #9ac6fa 1px solid; BORDER-BOTTOM: #9ac6fa 1px solid; BACKGROUND-COLOR: #dfeeff
+}
+.fonts_AKTA_pkwn {
+	FONT: 12px "Times New Roman", Times, serif; COLOR: #000000
+}
+.fonts_AKTA_pkwn_kcl {
+	FONT: 10px "Times New Roman"; COLOR: #000000
+}
+.fonts_KT_KK {
+	FONT: 10px Arial, Helvetica, sans-serif; COLOR: #000000
+}
+.border_green {
+	BORDER-RIGHT: #99cccc 1px solid; BORDER-TOP: #99cccc 1px solid; BORDER-LEFT: #99cccc 1px solid; BORDER-BOTTOM: #99cccc 1px solid
+}

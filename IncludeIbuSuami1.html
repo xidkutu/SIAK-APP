@@ -1,0 +1,258 @@
+  <div class="tab-page" name="t1" style="postion:absolute" id="tabPage3">
+    <h2 class="tab">Data Ibu dari Suami</h2>
+
+                <script type="text/javascript">
+                	tp1.addTabPage(document.getElementById("tabPage3"));
+                </script>
+
+                    <table class="TabSectionVisible" id="HeaderTAB" name="HeaderTAB" width="900">
+                      <tr>
+                        <td>
+                          <table align="center" width="100%" cellpadding="2" cellspacing="2" border="0">
+                            <tr>
+                              <td colspan="7"> </td>
+                            </tr>
+                            <tr>
+                              <td colspan="7">&nbsp;</td>
+                            </tr>
+                            <tr>
+                              <td width="22%">NIK Ibu dari Suami<font color="#000099" class="asterish">*</font></td>
+                              <td width="1%">:</td>
+                              <td width="23%">
+                                <input type="radio" name="radiobutton2" value="Ada" onClick="return radioValid4()">
+                                Ada<br>
+                                <input type="radio" name="radiobutton2" value="Tidak Ada" onClick="return radioValid5()">
+                                Tidak Ada</td>
+                              <td width="3%">&nbsp;</td>
+                              <td width="24%">Warga Negara Ibu dari Suami<font color="#000099" class="asterish">*</font></td>
+                              <td width="1%">:</td>
+                              <td width="26%">
+                                <input type="radio" name="radiobutton3" value="1" onClick="return radioValid6()">
+                                WNI<br>
+                                <input type="radio" name="radiobutton3" value="2" onClick="return radioValid7()">
+                                WNA</td>
+                            </tr>
+                            <tr>
+                              <td width="22%">
+                                <p style="line-height: 100%">Nomor Induk Kependudukan</p>
+                              </td>
+                              <td width="1%">:</td>
+                              <td width="23%">
+                                <p style="line-height: 100%">
+                                  <input type="text" name="nik_ibu_dr_suami" size="17" value="<%=request.getParameter("nik_ibu_dr_suami")%>" class="boxdefault" maxlength="17" onKeyUp="return num1(form1.nik_ibu_dr_suami)" onFocus="this.blur">
+                                  <b><b> </b></b></p>
+                              </td>
+                              <td width="3%">&nbsp;</td>
+                              <td width="24%">
+                                <p style="line-height: 100%">Nama Lengkap<font color="#000099" class="asterish">*</font></p>
+                              </td>
+                              <td width="1%">:</td>
+                              <td width="26%">
+                                <p style="line-height: 100%">
+                                  <input type="text" name="nama_ibu_suami" value="<%=kawinData.getRecord1().getWniObj().getRecord2().getNamaLgkp().toUpperCase()%>" size="22" class="boxdefault" maxlength="60" onKeyUp="return char(form1.nama_ibu_suami)" >
+                                </p>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td width="22%">Agama<font color="#000099" class="asterish">*</font></td>
+                              <td width="1%">:</td>
+                              <td width="23%">
+                                <select size="1" name="agama_ibu_suami" class="boxdefault">
+                                  <option value="0" selected>-- Pilih Agama --</option>
+                                  <option value="Islam">Islam</option>
+                                  <option value="Kristen">Kristen</option>
+                                  <option value="Katholik">Katholik</option>
+                                  <option value="Hindu">Hindu</option>
+                                  <option value="Budha">Budha</option>
+                                  <option value="Lainnya">Lainnya</option>
+                                </select>
+
+                              </td>
+                              <td width="3%">&nbsp;</td>
+                              <td width="24%">Tempat Lahir</td>
+                              <td width="1%">:</td>
+                              <td width="26%">
+                                <input type="text" name="tmpt_lhr_ibu_suami" value="<%=kawinData.getRecord1().getWniObj().getRecord2().getTmptLhr().toUpperCase()%>" size="22" class="boxdefault" maxlength="60" onFocus="this.blur()">
+                              </td>
+                            </tr>
+                            <tr>
+                              <td width="22%">
+                                <p style="line-height: 100%">Tanggal Lahir<font color="#000099" class="asterish">*</font></p>
+                              </td>
+                              <td width="1%">:</td>
+                              <td width="23%">
+                                <table width="100" border="0" cellspacing="3" cellpadding="0">
+                                  <tr>
+                                    <td>
+                                      <input
+                                class=boxdefault size=2 name=tgl_lhr_ibu_suami_dd value="<%=getDD(kawinData.getRecord1().getWniObj().getRecord2().getTglLhr())%>" maxlength="2" onKeyUp="return tab6()" onFocus="this.blur()">
+                                    </td>
+                                    <td>/ </td>
+                                    <td>
+                                      <input
+                                class=boxdefault size=2 name=tgl_lhr_ibu_suami_mm value="<%=getMM(kawinData.getRecord1().getWniObj().getRecord2().getTglLhr())%>" maxlength="2" onKeyUp="return tab7()" onFocus="this.blur()">
+                                    </td>
+                                    <td>/</td>
+                                    <td>
+                                      <input
+                                class=boxdefault size=4 name=tgl_lhr_ibu_suami_yy value="<%=getYY(kawinData.getRecord1().getWniObj().getRecord2().getTglLhr())%>" maxlength="4" onKeyUp="return tab8()" onFocus="this.blur()">
+                                    </td>
+                                  </tr>
+                                </table>
+                              </td>
+                              <td width="3%">&nbsp;</td>
+                              <td width="24%">
+                                <p style="line-height: 100%">Jenis Pekerjaan<font color="#000099" class="asterish">*</font></p>
+                              </td>
+                              <td width="1%">&nbsp;</td>
+                              <td width="26%">
+                                <p style="line-height: 100%">
+                                  <select
+                  name=jenis_pkrjn_ibu_suami1 boxdefault2 class="boxdefault">
+                                    <option value="0" selected>-- Pilih Jenis
+                                    Pekerjaan --</option>
+                                    <option value="1">1 - Pelajar/Mahasiswa</option>
+                                    <option value="2">2 - Mengurus Rumah Tangga</option>
+                                    <option value="3">3 - Pensiunan</option>
+                                    <option value="4">4 - Belum/Tidak Bekerja</option>
+                                    <option value="5">5 - Petani/Pekebun</option>
+                                    <option value="6">6 - Peternak</option>
+                                    <option value="7">7 - Nelayan/Perikanan</option>
+                                    <option value="8">8 - Industri</option>
+                                    <option value="9">9 - Konstruksi</option>
+                                    <option value="10">10 - Perdagangan</option>
+                                    <option value="11">11 - Transportasi</option>
+                                    <option value="12">12 - Pegawai Negeri Sipil</option>
+                                    <option value="13">13 - Tentara Nasional Indonesia</option>
+                                    <option value="14">14 - Kepolisian R.I.</option>
+                                    <option value="15">15 - Jasa Lainnya</option>
+                                    <option value="16">16 - Lainnya</option>
+                                  </select>
+                                  <select
+                  class="boxdefault" name="jenis_pkrjn_ibu_suami2" disabled>
+                                    <option value="0" selected>-- Pilih Jenis
+                                    Pekerjaan --</option>
+                                    <option value="1">1 - Trading and Industry</option>
+                                    <option value="2">2 - Forestry</option>
+                                    <option value="3">3 - Mining and Energy</option>
+                                    <option value="4">4 - Public Work</option>
+                                    <option value="5">5 - Farming</option>
+                                    <option value="6">6 - Religion</option>
+                                    <option value="7">7 - Bank and Financial</option>
+                                    <option value="8">8 - Health and Society</option>
+                                    <option value="9">9 - Tourism</option>
+                                    <option value="10">10 - Transportation and
+                                    Communication</option>
+                                    <option value="11">11 - Culture and Education</option>
+                                    <option value="12">12 - Others</option>
+                                  </select>
+                                </p>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td width="22%"> Alamat<font color="#000099" class="asterish">*</font></td>
+                              <td width="1%">:</td>
+                              <td colspan="5">
+                                <input type="text" name="alamat_ibu_suami" value="<%=kawinData.getRecord1().getWniObj().getRecord2().getAlamat()%>" size="30" class="boxdefault" maxlength="120" onFocus="this.blur()">
+                                RT<font color="#000099" class="asterish"> </font>
+                                <input type="text" name="rt_ibu_suami" value="<%=kawinData.getRecord1().getWniObj().getRecord2().getNoRt()%>" size="3" class="boxdefault" maxlength="3" onKeyUp="return num(form1.rt_ibu_suami)" onFocus="this.blur()">
+                                RW
+                                <input type="text" name="rw_ibu_suami" value="<%=kawinData.getRecord1().getWniObj().getRecord2().getNoRw()%>" size="3" class="boxdefault" maxlength="3" onKeyUp="return num(form1.rw_ibu_suami)" onFocus="this.blur()">
+                                Dusun/Kampung/Dukuh
+                                <input type="text" name="dusun_ibu_suami" size="22" class="boxdefault" value="<%=kawinData.getRecord1().getWniObj().getRecord2().getDusun()%>" maxlength="40" onFocus="this.blur()">
+                              </td>
+                            </tr>
+                            <tr>
+                              <td width="22%">
+                                <div align="right">Kode Pos</div>
+                              </td>
+                              <td width="1%">:</td>
+                              <td width="23%">
+                                <input type="text" name="kpos_ibu_suami" value="<%=kawinData.getRecord1().getWniObj().getRecord2().getKodePos()%>" size="5" class="boxdefault" maxlength="5" onFocus="this.blur()">
+                              </td>
+                              <td width="3%">&nbsp;</td>
+                              <td width="24%">
+                                <div align="right">Telepon</div>
+                              </td>
+                              <td width="1%">:</td>
+                              <td width="26%">
+                                <input type="text" name="tlp_ibu_suami" value="<%=kawinData.getRecord1().getWniObj().getRecord2().getTelp()%>" size="20" class="boxdefault" maxlength="20" onFocus="this.blur()">
+                              </td>
+                            </tr>
+                            <tr>
+                              <td width="22%">
+                                <div align="right">Nama Provinsi <font color="#000099" class="asterish">*</font>
+                                  </div>
+                              </td>
+                              <td width="1%">:</td>
+                              <td width="23%">
+<input type="text" name="nama_prop_ibu_suami" size="30" class="boxdefault" maxlength="120" value="<%=nama_prop_ibu_suami%>">
+                              </td>
+                              <td width="3%">&nbsp;</td>
+                              <td width="24%">
+                                <div align="right">Nama Kabupaten/Kota<font color="#000099" class="asterish">*</font>
+                                  </div>
+                              </td>
+                              <td width="1%">:</td>
+                              <td width="26%">
+<input type="text" name="nama_kab_ibu_suami" size="30" class="boxdefault" maxlength="120" value="<%=nama_kab_ibu_suami%>">
+                              </td>
+                            </tr>
+                            <tr>
+                              <td width="22%">
+                                <div align="right">Nama Kecamatan <font color="#000099" class="asterish">*</font>
+                                  </div>
+                              </td>
+                              <td width="1%">:</td>
+                              <td width="23%">
+<input type="text" name="nama_kec_ibu_suami" size="30" class="boxdefault" maxlength="120" value="<%=nama_kec_ibu_suami%>">
+                              </td>
+                              <td width="3%">&nbsp;</td>
+                              <td width="24%">
+                                <div align="right">Nama Desa/Kelurahan<font color="#000099" class="asterish">*</font>
+                                  </div>
+                              </td>
+                              <td width="1%">:</td>
+                             <td width="26%">
+<input type="text" name="nama_kel_ibu_suami" size="30" class="boxdefault" maxlength="120" value="<%=nama_kel_ibu_suami%>">
+                              </td>
+                            </tr>
+                          </table>
+                        </td>
+      </tr>
+    </table>
+</div>
+
+<script language="JavaScript">
+form1.jenis_pkrjn_ibu_suami1.options[<%=kawinData.getRecord1().getWniObj().getRecord2().getJenisPkrjn()%>].selected=true
+
+if("<%=request.getParameter("radiobutton2")%>" == "Ada")
+{
+form1.radiobutton2[0].checked=true
+form1.radiobutton2[1].disabled=true
+form1.radiobutton3[0].checked=true
+form1.radiobutton3[1].disabled=true
+}
+
+</script>
+
+<%
+int aga_idx=getAgamaIndex(kawinData.getRecord1().getWniObj().getRecord2().getAgama());
+
+if (aga_idx<=5)
+         {
+%>
+      <script language="javascript">
+      document.all['agama_ibu_suami'].selectedIndex="<%=aga_idx%>";
+      </script>
+ <%
+    }
+else
+    {
+%>
+      <script language="javascript">
+      document.all['agama_ibu_suami'].selectedIndex=6;
+      </script>
+<%
+}
+%>

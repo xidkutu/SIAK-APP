@@ -1,0 +1,9 @@
+package keluargawna;
+
+import javax.ejb.*;
+import java.util.*;
+import java.rmi.*;
+
+public interface facadePermohonHome extends javax.ejb.EJBHome {
+  public facadePermohon create() throws CreateException, RemoteException;
+}

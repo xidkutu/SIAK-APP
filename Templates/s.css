@@ -1,0 +1,161 @@
+A:link {
+	COLOR: #336633; TEXT-DECORATION: none; size: 11px
+}
+.title {
+	FONT-WEIGHT: bold; FONT-SIZE: 11px; FILTER: Alpha(Opacity=100) DropShadow(Color=#000000, OffX=1, OffY=1, Positive=1); COLOR: #99ff00
+}
+.shadow {
+	FILTER: Alpha(Opacity=100) DropShadow(Color=#000000, OffX=1, OffY=1, Positive=1)
+}
+.tablehead {
+	FONT-WEIGHT: bold; FONT-SIZE: 13px; COLOR: #ffffff; font-style: normal; line-height: normal; font-variant: normal
+}
+.submenu {
+	FONT-WEIGHT: normal; FONT-SIZE: 16px; COLOR: #333366; font-family: "Arial Black"; font-style: normal; font-variant: normal
+}
+.submenu:hover {
+	FONT-WEIGHT: bold; FONT-SIZE: 9px; COLOR: #99ff00; TEXT-DECORATION: none
+}
+.map {
+	FONT-SIZE: 9px; COLOR: #ffffff; TEXT-DECORATION: none
+}
+.map:hover {
+	FONT-SIZE: 9px; COLOR: #99ff00
+}
+.subtitle {
+	FONT-WEIGHT: bold; FONT-SIZE: 17px; COLOR: #003366
+; font-style: normal; line-height: normal; font-variant: normal; text-transform: none; font-family: Arial, Helvetica, sans-serif; text-decoration: none
+}
+.im {
+	FONT-WEIGHT: bold; FONT-SIZE: 9px; COLOR: #cccccc
+}
+.box {
+	BORDER-RIGHT: #999999 1px solid; BORDER-TOP: #999999 1px solid; FONT-SIZE: 10px; BACKGROUND-IMAGE: #FFFFFF lpx solid; BORDER-LEFT: #999999 1px solid; COLOR: #cccccc; BORDER-BOTTOM: #999999 1px solid; FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif
+}
+TD {
+	FONT-SIZE: 11px; COLOR: #000000; FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif
+}
+.body {
+	SCROLLBAR-FACE-COLOR: #6699CC; SCROLLBAR-HIGHLIGHT-COLOR: #999999; SCROLLBAR-SHADOW-COLOR: #4f4f4f; SCROLLBAR-3DLIGHT-COLOR: #333333; SCROLLBAR-ARROW-COLOR: #99ff00; SCROLLBAR-TRACK-COLOR: #565652; SCROLLBAR-DARKSHADOW-COLOR: #000000
+}
+BODY {
+	SCROLLBAR-FACE-COLOR: #9999CC; SCROLLBAR-HIGHLIGHT-COLOR: #CCCCFF; SCROLLBAR-SHADOW-COLOR: #99CCFF; SCROLLBAR-3DLIGHT-COLOR: #333333; SCROLLBAR-ARROW-COLOR: #99ff00; SCROLLBAR-TRACK-COLOR: #336699; SCROLLBAR-DARKSHADOW-COLOR: #000000
+}
+.boxblue {
+	BORDER-RIGHT: #6889d7 1px solid; BORDER-TOP: #6889d7 1px solid; FONT-SIZE: 10px; BACKGROUND-IMAGE: #FFFFFF lpx solid; BORDER-LEFT: #6889d7 1px solid; COLOR: #ffffff; BORDER-BOTTOM: #6889d7 1px solid; FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif
+}
+.boxstandard {
+	BORDER-RIGHT: #999999 1px solid; BORDER-TOP: #999999 1px solid; FONT-SIZE: 9px; BORDER-LEFT: #999999 1px solid; COLOR: #000000; BORDER-BOTTOM: #999999 1px solid; FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif; BACKGROUND-COLOR: #cdd6e4
+}
+.v9 {
+	FONT-SIZE: 9px
+}
+.linkblue {
+	COLOR: #2bd5ff; TEXT-DECORATION: underline
+}
+.linkblue:hover {
+	COLOR: #ffffff; TEXT-DECORATION: none
+}
+.v10 {
+	FONT-SIZE: 10px
+}
+.v11 {
+	FONT-SIZE: 10px
+}
+.border1px {
+	BORDER-RIGHT: 1px solid; BORDER-TOP: 1px solid; BORDER-LEFT: 1px solid; BORDER-BOTTOM: 1px solid
+}
+.boxdefault {
+	BORDER-RIGHT: #000066 1px solid; BORDER-TOP: #000066 1px solid; FONT-SIZE: 11px; LEFT: 15px; BACKGROUND-IMAGE: ; BORDER-LEFT: #000066 1px solid; COLOR: #000000; BORDER-BOTTOM: #000066 1px solid; FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif; font-style: normal; font-weight: normal
+}
+.boxdefault2 {
+	BORDER-RIGHT: #000066 1px solid; BORDER-TOP: #000066 1px solid; FONT-SIZE: 11px; LEFT: 15px; BORDER-LEFT: #000066 1px solid; COLOR: #000000; BORDER-BOTTOM: #000066 1px solid; FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif; BACKGROUND-COLOR: #b7c3d9
+}
+.linkdomun {
+	COLOR: #7c8fb3; TEXT-DECORATION: underline
+}
+.linkdomun:hover {
+	COLOR: #a4b1ca; TEXT-DECORATION: none
+}
+.tt {
+	BACKGROUND-POSITION: right top; BACKGROUND-IMAGE: #FFFFFF lpx solid;
+}
+.floatleft {
+	PADDING-RIGHT: 5px; FLOAT: left; PADDING-BOTTOM: 5px
+}
+.linkyellow {
+	COLOR: #CC3300; font-style: normal
+; font-size: 9px; line-height: normal; font-weight: normal; font-variant: normal
+}
+.asterish {
+	font-weight: bold; color: #CC3300; text-decoration: blink
+}
+.judul_utama {
+	font-family: "Arial Black"; font-size: 16px; font-style: normal; line-height: normal; font-weight: normal; color: #336699
+}
+A:link {
+	COLOR: #336633; TEXT-DECORATION: none; size: 11px
+}
+A:visited {
+	COLOR: #000080; TEXT-DECORATION: none; size: 11px
+}
+A:hover {
+	COLOR: #000099; TEXT-DECORATION: underline; size: 11px
+}
+A.mid {
+	COLOR: #336633; TEXT-DECORATION: none; size: 12px
+}
+A.mid:hover {
+	COLOR: #000099; TEXT-DECORATION: underline; size: 12px
+}
+.back_box {
+	font-family: Arial, Helvetica, sans-serif; font-size: x-small; font-weight: bold; color: #FFFF00; background-color: #003366; font-style: normal
+}
+.subfield {
+	FONT-WEIGHT: bold; FONT-SIZE: 14px; COLOR: #FFFF00 ; font-style: normal; line-height: normal; font-variant: normal; text-transform: none; font-family: Arial, Helvetica, sans-serif; text-decoration: none
+}
+.subtitle2nd {
+	FONT-WEIGHT: bold; FONT-SIZE: 12px; COLOR: #FFFF00 ; font-style: normal; line-height: normal; font-variant: normal; text-transform: none; font-family: Arial, Helvetica, sans-serif; text-decoration: none
+
+}.text_MBlue {
+	font-family: Verdana, Arial, Helvetica, sans-serif; font-size: x-small; color: #000000; font-style: normal; font-weight: normal; font-variant: normal
+
+}.catatan {
+	font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 10px; font-style: italic; line-height: normal; font-weight: normal; font-variant: normal; color: #990000
+}
+.judul_utama {  font-variant: normal}
+.C-header {  background-color: #6C9AC4}
+.C-Field {  background-color: #CBE0FA}
+.C-BG {  background-color: #93BEE2}
+.C-Fonts {  font-family: Verdana, Arial, Helvetica, sans-serif; font-size: xx-small; font-weight: bold; font-variant: normal; color: #FFFFFF; background-color: #307CB6}
+.underscore {  text-decoration: underline}
+.sertifikat_e {  font-family: Georgia; font-size: 10px; font-style: italic; line-height: normal; font-weight: bold; font-variant: normal; text-decoration: overline}
+.sertifikat_i {  font-family: "Times New Roman", Times, serif; font-style: normal; line-height: normal; font-weight: normal; font-variant: normal; text-decoration: underline}
+.fonts_KTP {  font-family: Arial, Helvetica, sans-serif; font-size: 7.5px; color: #000000}
+.fonts_KTPA {  font-family: Arial, Helvetica, sans-serif; font-size: 8.5px; font-weight: bold; color: #000000}
+.font_TAB {  font-family: Arial, Helvetica, sans-serif; font-size: xx-small; font-weight: bold; color: #000000}
+.fonts_KTP_sub { font-family: Arial, Helvetica, sans-serif; font-size: 7.5px; font-weight: bold}
+.fonts_KTP_judul { font-family: Arial, Helvetica, sans-serif; font-size: 9px; font-weight: bold}
+.fonts_KTP_judula { font-family: Arial, Helvetica, sans-serif; font-size: 10.5px; font-weight: bold}
+.border {  border: 1px #9AC6FA solid; background-color: #DFEEFF}
+.fonts_AKTA_pkwn { font-family: "Times New Roman", Times, serif; font-size: 12px; color: #000000; font-style: normal; line-height: normal; font-weight: normal; font-variant: normal}
+.fonts_AKTA_pkwn_kcl { font-family: "Times New Roman"; font-size: 10px; color: #000000; font-style: normal; line-height: normal; font-weight: normal; font-variant: normal }
+.fonts_KT_KK { font-family: Arial, Helvetica, sans-serif; font-size: 10px; color: #000000; font-style: normal; line-height: normal; font-weight: normal; font-variant: normal }
+.border_green {  border: 1px #99CCCC solid}
+.grsatas {
+	border: thin solid;
+}
+.fonts_akta { font-family: Arial, Helvetica, sans-serif; font-size: 12px; color: #000000; font-style: normal; line-height: normal; font-weight: normal; font-variant: normal }
+.font_kut_akta {  font-size: large; font-style: normal; line-height: normal; font-family: serif}
+.fonts_kut_akta_wn {  font-family: "Times New Roman", Times, serif; font-size: small; font-style: normal; line-height: normal; color: #000000}
+.font_kut_akta_miring {  font-family: serif; font-size: small; font-style: italic; line-height: normal}
+.fonts_ktp_baru {  font-family: Fixedsys; font-size: small}
+.C-FontsBIPWNI {
+font-family: Verdana, Arial, Helvetica, sans-serif; font-size: xx-small; font-weight: bold; font-variant: normal; color: #000000; background-color: #FFFFFF
+}
+.C-FieldBIPWNI {
+background-color: #FFFFFF
+}
+.C-BGBIPWNI {
+background-color: #FFFFFF
+}
